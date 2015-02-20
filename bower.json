@@ -1,0 +1,23 @@
+{
+  "name": "Chinese Input",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cestastanford/chinese_input",
+  "authors": [
+    "Jason Heppler <jason.heppler@gmail.com>"
+  ],
+  "description": "Visualizing Chinese input",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "d3": "~3.5.5",
+    "queue-async": "~1.0.7"
+  }
+}
