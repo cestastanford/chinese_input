@@ -2,60 +2,20 @@
 <head>
   <title>Token Arcs</title>
   <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+  <script src="bower_components/queue-async/queue.min.js"></script>
+  <script src="visualization.js"></script>
+
 </head>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="http://d3js.org/queue.v1.min.js"></script>
-<script src="visualization.js"></script>
-
-<style>
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-}
-
-b {
-    font-weight: 900;
-}
-
-.outline {
-    fill: none;
-    stroke: #888888;
-    stroke-width: 1px;
-}
-
-#tooltip {
-    font-size: 10pt;
-    font-weight: 900;
-
-    fill: #000000;
-    stroke: #ffffff;
-    stroke-width: 0.25px;
-}
-
-.node {
-    stroke: #ffffff;
-    stroke-weight: 1px;
-}
-
-.link {
-    fill: none;
-    stroke: #888888;
-    stroke-weight: 1px;
-    stroke-opacity: 0.5;
-}
-
-.highlight {
-    stroke: red;
-    stroke-weight: 4px;
-    stroke-opacity: 1.0;
-}
-</style>
 <body>
 
 <h2>TokenArc</h2>
 
 <script>
-d3.json("tokens.json", arcDiagram);
+d3.json("data/tokens.json", arcDiagram);
 </script>
 
 </body>
