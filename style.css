@@ -57,12 +57,62 @@ b {
 #english {
   padding: 1em;
   background: rgba(250,255,255,1);
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ccc;
 }
 
 #chinese {
   padding: 1em;
-  background: rgba(253,255,255,1);
-  border-bottom: 1px solid #333;
+  background: rgba(250,255,255,1);
+  border-bottom: 1px solid #ccc;
 }
 
+#source {
+    color: brown;
+}
+
+/* Filters */
+
+#accordion {
+    position: fixed;
+    width: 20%;
+    right: 1;
+}
+.panel-body {
+    background: rgba(250,255,255,0.5);
+}
+.panel-default > .panel-heading{
+    /*background: #fff;*/
+}
+
+.panel-heading {
+    padding: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-group {
+  margin-bottom: 0;
+}
+
+.panel-title a {
+    color: #333;
+    text-align: left;
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+}
+
+.panel-title a:hover, .panel-title a:focus, .panel-title a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+.panel-options {
+    padding: 5px;
+}

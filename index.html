@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="style.css">
   <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
-  <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
-  <script src="bower_components/queue-async/queue.min.js"></script>
-  <script src="visualization.js"></script>
+  <script src="./bower_components/d3/d3.min.js" charset="utf-8"></script>
+  <script src="./bower_components/queue-async/queue.min.js"></script>
+  <script src="./bower_components/keypress/keypress-2.1.0.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./js/visualization.js"></script>
 
 </head>
 <body>
@@ -21,6 +24,7 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
+          <li><a href="#">Create</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </div>
@@ -31,47 +35,49 @@
     <div class="col-md-9">
       <div id="texts">
         <div id="english">
-          <h5>English</h5>
-          <p>wansh*****W*wanshang1zongshi1shuibuzhao1,*.d*fanshi1xude2yanjun**u*iu1,caihui1mingbai1.@tam1-yeyougei1zhixian****dao1*ian***xianli1*dazhiguo******2*dachai****1*da2jia***dajia*****ka4guode1,yeyou1gei1shengshi****shi1zhangguo2*guo1zuiba1*de1,you**e1you****ye2you1shiyu**wei******^?^?zhanl5ta1qizi1de1,yo*eyou1gei***laozi1y*niaozi***ng1bei1h*zhanzhu****izhu1bisi2de1'ta***'*;ta,e1n***tam1nashihou1de1lianse1,quan1meiyou1zuotian1nam***zhem1pa1,ye1meiyou1nam1xiong1.@zui1qia*guai1de1hi1**shi1zuotian1jiashang1de1nage1nvren1,data1erzi1,zuili1shuo1dao2,_^"**^"laozi1ya1^!wo1yao1yaoni1jih*kou1cai1zhu****cai3chuqi1*^!**c*chuqi3^!^"ta1yanjing1qushi****esh***ueshi1*kanzhe1wo1.wo1z*chul1yijing5,zheyan1buzhu1;na1qu*ingmianlieya1****qingmianlieya1de1yihuoren1,biaod**ndou***3dou1hongxiao1qilai1.chenglao****lao1wu4ganshangqian1,yingshi2bawo1tuohui1jiazhon1le1.</p>
+          <h4>English</h4>
+          <p>"I can't sleep at night. Everything requires careful consideration if one is to understand it. Those people, some of whom have been pilloried by the magistrate..." &#183; <span id="source">("Diary of a Madman" by Lu Xun, 1881-1936)</span></p>
         </div>
         <div id="chinese">
-          <h5>Chinese</h5>
+          <h4>Chinese</h4>
+          <p>晚上總是睡不著。凡事須得研究，才會明白。 他們,也有給知縣打枷過的，也有給紳士掌過嘴的</p>
         </div>
       </div>
       <div id="chart"></div>
     </div>
-    <div class="col-md-3">
-      <h3>Filters</h3>
-      <h4>Dialect</h4>
-      <ul>
-        <li>cantonese</li>
-        <li>fujianese</li>
-        <li>mandarin</li>
-      </ul>
-      <h4>Age Group</h4>
-      <ul>
-        <li>18&#8212;30</li>
-        <li>30&#8212;45</li>
-        <li>45&#8212;60</li>
-        <li>60 and older</li>
-      </ul>
-      <h4>Gender</h4>
-        <ul>
-          <li>Male</li>
-          <li>Female</li>
-        </ul>
-      <h4>Operating System</h4>
-      <ul>
-        <li>Windows</li>
-        <li>Mac</li>
-      </ul>
-      <h4>Input Method Editor</h4>
-      <ul>
-        <li>sogou pinyin</li>
-        <li>baidu pinuin</li>
-        <li>zhuyin</li>
-    </div>
-  </div>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-filter"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Filters</a></h4>
+            </div>
+            <div id="collapse-filter" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="panel-options">
+                  <h5>Dialect</h5>
+                    <div class="checkbox"><label><input type="checkbox" value="cantonese">cantonese</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="fujianese">fujianese</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="mandarin">mandarin</label></div>
+                  <h5>Age Group</h5>
+                    <div class="checkbox"><label><input type="checkbox" value="18to30">18&#8212;30</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="30to45">30&#8212;45</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="45to60">45&#8212;60</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="60over">60 and over</label></div>
+                  <h5>Gender</h5>
+                    <div class="checkbox"><label><input type="checkbox" value="gender_female">Female</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="gender_male">Male</label></div>
+                  <h5>Operating System</h5>
+                    <div class="checkbox"><label><input type="checkbox" value="windows_os">Windows</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="mac_os">Mac</label></div>
+                  <h5>Input Method Editor</h5>
+                    <div class="checkbox"><label><input type="checkbox" value="sogoupinyin">sogou pinyin</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="baidupinuin">baidu pinuin</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="zhuyin">zhuyin</label></div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
 
 <script>
 d3.json("data/tokens.json", arcDiagram);
