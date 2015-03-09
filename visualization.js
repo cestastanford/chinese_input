@@ -18,7 +18,7 @@ function addTooltip(circle) {
   */
 
 function arcDiagram(graph) {
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("#chart").append("svg")
       .attr("id", "arc")
       .attr("width", width)
       .attr("height", height);

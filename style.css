@@ -7,6 +7,10 @@ b {
     font-weight: 900;
 }
 
+#chart {
+  position: relative;
+}
+
 .outline {
     fill: none;
     stroke: #888888;
@@ -39,3 +43,26 @@ b {
     stroke-weight: 4px;
     stroke-opacity: 1.0;
 }
+
+.row {
+  padding-top: 50px;
+}
+
+.col-md-3 {
+  background: rgba(250,255,255,0.5);
+  border-left: 1px solid #333;
+  height: 100%;
+}
+
+#english {
+  padding: 1em;
+  background: rgba(250,255,255,1);
+  border-bottom: 1px solid #333;
+}
+
+#chinese {
+  padding: 1em;
+  background: rgba(253,255,255,1);
+  border-bottom: 1px solid #333;
+}
+
