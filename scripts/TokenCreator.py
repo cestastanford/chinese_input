@@ -52,10 +52,10 @@ result=""
 #,"age_group":"___", "dialect":"___","gender":"___","operating_system":"___","input_method":"___","trial":"1"}
 for c in textWithoutSpaces:
     if c==" ":
-        result=result+str(counter)+",\"age_group\":\"" + age_group +"\",\"dialect\":\"" + dialect +"\",\"gender\":\"" + gender +"\",\"operating_system\":\"" +operating_system +"\",\"input_method\":\"" + input_method +"\",\"trial\":" + trial + "}"
+        result=result+str(counter)+",\"age_group\":\"" + age_group +"\",\"dialect\":\"" + dialect +"\",\"gender\":\"" + gender +"\",\"operating_system\":\"" +operating_system +"\",\"input_method\":\"" + input_method +"\",\"trial\":" + trial + "},"
         counter=counter+1
     else: result=result+c
-text_output.write(result)
+text_output.write("[\"nodes\": \n" + result + "] \n\"links\": []")
 
 # Dictionaries for yinpin
 singleCharacterInitialList = ['b', 'p', 'm', 'f', 'd', 't', 'n', 'l', 'z', 'c', 's', 'r', 'j', 'q', 'x', 'g', 'k', 'h']
