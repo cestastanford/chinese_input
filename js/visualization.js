@@ -2,8 +2,12 @@ var width   = 960,
     height  = 500,
     margin  = 20,
     pad     = margin / 2,
-    radius  = 8,
-    yfixed  = pad + radius;
+    radius  = 14,
+    yfixed  = pad + radius,
+    legendRectSize = 18,
+    legendSpacing = 4;;
+
+var color = d3.scale.category20();
 
 /**
   * Helper Functions
@@ -56,18 +60,40 @@ function linearLayout(nodes) {
 }
 
 function drawNodes(nodes) {
-  var color = d3.scale.category20();
-  d3.select("#plot").selectAll(".node")
+
+  var gnodes = d3.select("#plot").selectAll("g.node")
     .data(nodes)
-  .enter().append("circle")
+  .enter().append('g');
+
+  var nodes = gnodes.append("circle")
     .attr("class", "node")
     .attr("id", function(d, i) { return d.name; })
     .attr("cx", function(d, i) { return d.x; })
     .attr("cy", function(d, i) { return d.y; })
     .attr("r", function(d, i) { return radius; })
-    .style("fill", function(d, i) { return color(d.group); })
+    .style("stroke", function(d, i) { return color(d.type); })
     .on("mouseover", function(d,i) { addTooltip(d3.select(this)); })
     .on("mouseout", function(d,i) { d3.select("#tooltip").remove(); });
+
+  // var nodes = d3.select("#plot").selectAll(".node")
+  //   .data(nodes)
+  // .enter().append("circle")
+  //   .attr("class", "node")
+  //   .attr("id", function(d, i) { return d.name; })
+  //   .attr("cx", function(d, i) { return d.x; })
+  //   .attr("cy", function(d, i) { return d.y; })
+  //   .attr("r", function(d, i) { return radius; })
+  //   .style("stroke", function(d, i) { return color(d.type); })
+  //   // .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+  //   // .text(function(d) { return d.token; })
+  //   .on("mouseover", function(d,i) { addTooltip(d3.select(this)); })
+  //   .on("mouseout", function(d,i) { d3.select("#tooltip").remove(); });
+
+  gnodes.append("text")
+    // .attr("dx", function(d) { return 20})
+    // .attr("cy", ".35em")
+    .text(function(d) { return d.token; });
+
 }
 
 function drawLinks(links) {
@@ -95,4 +121,8 @@ function drawLinks(links) {
       radians.domain([0, points.length - 1]);
       return arc(points);
     });
+}
+
+function drawLegend() {
+// legend function for colors
 }
