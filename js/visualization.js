@@ -1,8 +1,8 @@
-var width   = 960,
+var width   = 1800,
     height  = 500,
     margin  = 20,
     pad     = margin / 2,
-    radius  = 14,
+    radius  = 6,
     yfixed  = pad + radius,
     legendRectSize = 18,
     legendSpacing = 4;;
@@ -92,7 +92,7 @@ function drawNodes(nodes) {
   gnodes.append("text")
     // .attr("dx", function(d) { return 20})
     // .attr("cy", ".35em")
-    .text(function(d) { return d.token; });
+    //.text(function(d) { return d.token; });
 
 }
 
