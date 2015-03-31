@@ -3,9 +3,17 @@ var width   = 1800,
     margin  = 20,
     pad     = margin / 2,
     radius  = 6,
-    yfixed  = pad + radius,
-    legendRectSize = 18,
-    legendSpacing = 4;;
+    yfixed  = pad + radius;
+
+// Legend variables
+var legend_x = 0,
+    legend_y = 5,
+    legend_width = 175,
+    legend_height = 620,
+    legend_margin = 20
+    key_y = 40,
+    key_x = 16,
+    mapped_y = legend_y + legend_height - 90;
 
 var color = d3.scale.category20();
 
@@ -22,6 +30,10 @@ function addTooltip(circle) {
   */
 
 function arcDiagram(graph) {
+  var radius = d3.scale.sqrt()
+    .domain([0, 20])
+    .range([0, 15]);
+
   var svg = d3.select("#chart").append("svg")
       .attr("id", "arc")
       .attr("width", width)
@@ -41,6 +53,90 @@ function arcDiagram(graph) {
   linearLayout(graph.nodes);
   drawLinks(graph.links);
   drawNodes(graph.nodes);
+
+  //   var legend = svg.append("g")
+  //   .attr("class", "legend")
+  //   .attr("transform", "translate(" + (width - 50) + "," + (height - 20) + ")")
+  // .selectAll("g")
+  //   .data([5, 10, 15])
+  // .enter().append("g");
+
+  // legend.append("circle")
+  //   .attr("cy", function(d) { return -radius(d); })
+  //   .attr("r", radius);
+
+  // legend.append("text")
+  //   .attr("y", function(d) { return -2 * radius(d); })
+  //   .attr("dy", "1.3em")
+  //   .text(d3.format(".1s"));
+
+    /* 
+     * Legend
+     */
+
+    var legend = svg.append("g")
+        .attr("class", "legend");
+    var key = legend.append("g")
+
+    // Initial
+    key.append("circle")
+        .attr("id", "legend_initial")
+        .attr("cx", legend_x + key_x)
+        .attr("cy", legend_y + key_y + 5)
+        .attr("r", 5)
+        .style("fill", "blue");
+
+    key.append("text")
+        .attr("class", "legendText")
+        .attr("id", "legend_initial_label")
+        .attr("x", legend_x + key_x + 10 )
+        .attr("y", legend_y + 10 + key_y )
+        .text("Initial");
+
+    // Selection
+    key.append("circle")
+        .attr("id", "legend_selection")
+        .attr("cx", function () { return legend_x + key_x })
+        .attr("cy", function () { return legend_y + legend_margin + key_y + 5 })
+        .attr("r", 5)
+        .style("fill", "lightblue");
+
+    key.append("text")
+        .attr("class", "legendText")
+        .attr("id", "legend_selection_label")
+        .attr("x", legend_x + key_x + 10)
+        .attr("y", legend_y + legend_margin + 10 + key_y)
+        .text("Selection");
+
+    // Final
+    key.append("circle")
+        .attr("id", "legend_final")
+        .attr("cx", legend_x + key_x)
+        .attr("cy", legend_y + 2 * legend_margin + key_y + 5)
+        .attr("r", 5)
+        .style("fill", "orange");
+
+    key.append("text")
+        .attr("class", "legendText")
+        .attr("id", "legend_final_label")
+        .attr("x", legend_x + key_x + 10)
+        .attr("y", legend_y + 2 * legend_margin + 10 + key_y)
+        .text("Final");
+
+    // Delete
+    key.append("circle")
+        .attr("id", "legend_delete")
+        .attr("cx", legend_x + key_x)
+        .attr("cy", legend_y + 3 * legend_margin + key_y + 5)
+        .attr("r", 5)
+        .style("fill", "gold");
+
+    key.append("text")
+        .attr("class", "legendText")
+        .attr("id", "legend_delete_label")
+        .attr("x", legend_x + key_x + 10)
+        .attr("y", legend_y + 3 * legend_margin + 10 + key_y)
+        .text("Delete");
 }
 
 // layout nodes linearly

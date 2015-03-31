@@ -129,3 +129,14 @@ rect {
 .panel-options {
     padding: 5px;
 }
+
+.legend circle {
+  fill: none;
+  stroke: #ccc;
+}
+
+.legend text {
+  fill: #777;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
