@@ -1,4 +1,4 @@
-var width   = 1800,
+var width   = 3800,
     height  = 500,
     margin  = 20,
     pad     = margin / 2,
