@@ -54,44 +54,28 @@ function arcDiagram(graph) {
   drawLinks(graph.links);
   drawNodes(graph.nodes);
 
-  //   var legend = svg.append("g")
-  //   .attr("class", "legend")
-  //   .attr("transform", "translate(" + (width - 50) + "," + (height - 20) + ")")
-  // .selectAll("g")
-  //   .data([5, 10, 15])
-  // .enter().append("g");
+  /* 
+   * Legend
+   */
 
-  // legend.append("circle")
-  //   .attr("cy", function(d) { return -radius(d); })
-  //   .attr("r", radius);
+  var legend = svg.append("g")
+      .attr("class", "legend");
+  var key = legend.append("g")
 
-  // legend.append("text")
-  //   .attr("y", function(d) { return -2 * radius(d); })
-  //   .attr("dy", "1.3em")
-  //   .text(d3.format(".1s"));
-
-    /* 
-     * Legend
-     */
-
-    var legend = svg.append("g")
-        .attr("class", "legend");
-    var key = legend.append("g")
-
-    // Initial
-    key.append("circle")
-        .attr("id", "legend_initial")
-        .attr("cx", legend_x + key_x)
-        .attr("cy", legend_y + key_y + 5)
-        .attr("r", 5)
-        .style("fill", "blue");
+  // Initial
+  key.append("circle")
+      .attr("id", "legend_initial")
+      .attr("cx", legend_x + key_x)
+      .attr("cy", legend_y + key_y + 5)
+      .attr("r", 5)
+      .style("fill", "blue");
 
     key.append("text")
-        .attr("class", "legendText")
-        .attr("id", "legend_initial_label")
-        .attr("x", legend_x + key_x + 10 )
-        .attr("y", legend_y + 10 + key_y )
-        .text("Initial");
+      .attr("class", "legendText")
+      .attr("id", "legend_initial_label")
+      .attr("x", legend_x + key_x + 10 )
+      .attr("y", legend_y + 10 + key_y )
+      .text("Initial");
 
     // Selection
     key.append("circle")
