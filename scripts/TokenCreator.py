@@ -73,7 +73,7 @@ for num in range (0, counter-1):
     number1=number1+1
     number2=number2+1
     result=result+addition
-print result
+text_output.write(result)
 
 # Dictionaries for yinpin
 # singleCharacterInitialList = ['b', 'p', 'm', 'f', 'd', 't', 'n', 'l', 'z', 'c', 's', 'r', 'j', 'q', 'x', 'g', 'k', 'h']
