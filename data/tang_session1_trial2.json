@@ -99,21 +99,1649 @@
 	{"token":"3","type":"selection","uniq":96,"age_group":"18-30","dialect":"cantonese","gender":"female","operating_system":"mac","input_method":"apple","trial":2}
 ],
 "links": [
-	{"source":0,"target":1},
-	{"source":1,"target":2},
-	{"source":2,"target":3},
-	{"source":3,"target":4},
-	{"source":4,"target":5},
-	{"source":5,"target":6},
-	{"source":6,"target":7},
-	{"source":7,"target":8},
-	{"source":8,"target":9},
-	{"source":9,"target":10},
-	{"source":10,"target":11},
-	{"source":11,"target":12},
-	{"source":12,"target":13},
-	{"source":13,"target":14},
-	{"source":14,"target":15},
-	{"source":15,"target":16}
+  {
+    "source": "b",
+    "target": "a"
+  },
+  {
+    "source": "p",
+    "target": "a"
+  },
+  {
+    "source": "m",
+    "target": "a"
+  },
+  {
+    "source": "f",
+    "target": "a"
+  },
+  {
+    "source": "d",
+    "target": "a"
+  },
+  {
+    "source": "t",
+    "target": "a"
+  },
+  {
+    "source": "n",
+    "target": "a"
+  },
+  {
+    "source": "l",
+    "target": "a"
+  },
+  {
+    "source": "g",
+    "target": "a"
+  },
+  {
+    "source": "k",
+    "target": "a"
+  },
+  {
+    "source": "h",
+    "target": "a"
+  },
+  {
+    "source": "s",
+    "target": "a"
+  },
+  {
+    "source": "z",
+    "target": "a"
+  },
+  {
+    "source": "c",
+    "target": "a"
+  },
+  {
+    "source": "sh",
+    "target": "a"
+  },
+  {
+    "source": "zh",
+    "target": "a"
+  },
+  {
+    "source": "ch",
+    "target": "a"
+  },
+  {
+    "source": "0",
+    "target": "a"
+  },
+  {
+    "source": "b",
+    "target": "o"
+  },
+  {
+    "source": "p",
+    "target": "o"
+  },
+  {
+    "source": "m",
+    "target": "o"
+  },
+  {
+    "source": "f",
+    "target": "o"
+  },
+  {
+    "source": "l",
+    "target": "o"
+  },
+  {
+    "source": "y",
+    "target": "o"
+  },
+  {
+    "source": "0",
+    "target": "o"
+  },
+  {
+    "source": "m",
+    "target": "e"
+  },
+  {
+    "source": "d",
+    "target": "e"
+  },
+  {
+    "source": "t",
+    "target": "e"
+  },
+  {
+    "source": "n",
+    "target": "e"
+  },
+  {
+    "source": "l",
+    "target": "e"
+  },
+  {
+    "source": "g",
+    "target": "e"
+  },
+  {
+    "source": "k",
+    "target": "e"
+  },
+  {
+    "source": "h",
+    "target": "e"
+  },
+  {
+    "source": "s",
+    "target": "e"
+  },
+  {
+    "source": "z",
+    "target": "e"
+  },
+  {
+    "source": "c",
+    "target": "e"
+  },
+  {
+    "source": "r",
+    "target": "e"
+  },
+  {
+    "source": "sh",
+    "target": "e"
+  },
+  {
+    "source": "zh",
+    "target": "e"
+  },
+  {
+    "source": "ch",
+    "target": "e"
+  },
+  {
+    "source": "0",
+    "target": "e"
+  },
+  {
+    "source": "s",
+    "target": "i"
+  },
+  {
+    "source": "z",
+    "target": "i"
+  },
+  {
+    "source": "c",
+    "target": "i"
+  },
+  {
+    "source": "r",
+    "target": "i"
+  },
+  {
+    "source": "sh",
+    "target": "i"
+  },
+  {
+    "source": "zh",
+    "target": "i"
+  },
+  {
+    "source": "ch",
+    "target": "i"
+  },
+  {
+    "source": "b",
+    "target": "ai"
+  },
+  {
+    "source": "p",
+    "target": "ai"
+  },
+  {
+    "source": "m",
+    "target": "ai"
+  },
+  {
+    "source": "d",
+    "target": "ai"
+  },
+  {
+    "source": "t",
+    "target": "ai"
+  },
+  {
+    "source": "n",
+    "target": "ai"
+  },
+  {
+    "source": "l",
+    "target": "ai"
+  },
+  {
+    "source": "g",
+    "target": "ai"
+  },
+  {
+    "source": "k",
+    "target": "ai"
+  },
+  {
+    "source": "h",
+    "target": "ai"
+  },
+  {
+    "source": "s",
+    "target": "ai"
+  },
+  {
+    "source": "z",
+    "target": "ai"
+  },
+  {
+    "source": "c",
+    "target": "ai"
+  },
+  {
+    "source": "sh",
+    "target": "ai"
+  },
+  {
+    "source": "zh",
+    "target": "ai"
+  },
+  {
+    "source": "ch",
+    "target": "ai"
+  },
+  {
+    "source": "0",
+    "target": "ia"
+  },
+  {
+    "source": "b",
+    "target": "ei"
+  },
+  {
+    "source": "p",
+    "target": "ei"
+  },
+  {
+    "source": "m",
+    "target": "ei"
+  },
+  {
+    "source": "f",
+    "target": "ei"
+  },
+  {
+    "source": "d",
+    "target": "ei"
+  },
+  {
+    "source": "t",
+    "target": "ei"
+  },
+  {
+    "source": "n",
+    "target": "ei"
+  },
+  {
+    "source": "l",
+    "target": "ei"
+  },
+  {
+    "source": "g",
+    "target": "ei"
+  },
+  {
+    "source": "k",
+    "target": "ei"
+  },
+  {
+    "source": "h",
+    "target": "ei"
+  },
+  {
+    "source": "z",
+    "target": "ei"
+  },
+  {
+    "source": "sh",
+    "target": "ei"
+  },
+  {
+    "source": "zh",
+    "target": "ei"
+  },
+  {
+    "source": "0",
+    "target": "ei"
+  },
+  {
+    "source": "p",
+    "target": "ou"
+  },
+  {
+    "source": "m",
+    "target": "ou"
+  },
+  {
+    "source": "f",
+    "target": "ou"
+  },
+  {
+    "source": "d",
+    "target": "ou"
+  },
+  {
+    "source": "t",
+    "target": "ou"
+  },
+  {
+    "source": "n",
+    "target": "ou"
+  },
+  {
+    "source": "l",
+    "target": "ou"
+  },
+  {
+    "source": "g",
+    "target": "ou"
+  },
+  {
+    "source": "k",
+    "target": "ou"
+  },
+  {
+    "source": "h",
+    "target": "ou"
+  },
+  {
+    "source": "s",
+    "target": "ou"
+  },
+  {
+    "source": "z",
+    "target": "ou"
+  },
+  {
+    "source": "c",
+    "target": "ou"
+  },
+  {
+    "source": "r",
+    "target": "ou"
+  },
+  {
+    "source": "sh",
+    "target": "ou"
+  },
+  {
+    "source": "zh",
+    "target": "ou"
+  },
+  {
+    "source": "ch",
+    "target": "ou"
+  },
+  {
+    "source": "0",
+    "target": "ou"
+  },
+  {
+    "source": "b",
+    "target": "ao"
+  },
+  {
+    "source": "p",
+    "target": "ao"
+  },
+  {
+    "source": "m",
+    "target": "ao"
+  },
+  {
+    "source": "d",
+    "target": "ao"
+  },
+  {
+    "source": "t",
+    "target": "ao"
+  },
+  {
+    "source": "n",
+    "target": "ao"
+  },
+  {
+    "source": "l",
+    "target": "ao"
+  },
+  {
+    "source": "g",
+    "target": "ao"
+  },
+  {
+    "source": "k",
+    "target": "ao"
+  },
+  {
+    "source": "h",
+    "target": "ao"
+  },
+  {
+    "source": "s",
+    "target": "ao"
+  },
+  {
+    "source": "z",
+    "target": "ao"
+  },
+  {
+    "source": "c",
+    "target": "ao"
+  },
+  {
+    "source": "r",
+    "target": "ao"
+  },
+  {
+    "source": "sh",
+    "target": "ao"
+  },
+  {
+    "source": "zh",
+    "target": "ao"
+  },
+  {
+    "source": "ch",
+    "target": "ao"
+  },
+  {
+    "source": "0",
+    "target": "ao"
+  },
+  {
+    "source": "b",
+    "target": "an"
+  },
+  {
+    "source": "p",
+    "target": "an"
+  },
+  {
+    "source": "m",
+    "target": "an"
+  },
+  {
+    "source": "f",
+    "target": "an"
+  },
+  {
+    "source": "d",
+    "target": "an"
+  },
+  {
+    "source": "t",
+    "target": "an"
+  },
+  {
+    "source": "n",
+    "target": "an"
+  },
+  {
+    "source": "l",
+    "target": "an"
+  },
+  {
+    "source": "g",
+    "target": "an"
+  },
+  {
+    "source": "k",
+    "target": "an"
+  },
+  {
+    "source": "h",
+    "target": "an"
+  },
+  {
+    "source": "s",
+    "target": "an"
+  },
+  {
+    "source": "z",
+    "target": "an"
+  },
+  {
+    "source": "c",
+    "target": "an"
+  },
+  {
+    "source": "r",
+    "target": "an"
+  },
+  {
+    "source": "sh",
+    "target": "an"
+  },
+  {
+    "source": "zh",
+    "target": "an"
+  },
+  {
+    "source": "ch",
+    "target": "an"
+  },
+  {
+    "source": "0",
+    "target": "an"
+  },
+  {
+    "source": "b",
+    "target": "en"
+  },
+  {
+    "source": "p",
+    "target": "en"
+  },
+  {
+    "source": "m",
+    "target": "en"
+  },
+  {
+    "source": "f",
+    "target": "en"
+  },
+  {
+    "source": "d",
+    "target": "en"
+  },
+  {
+    "source": "n",
+    "target": "en"
+  },
+  {
+    "source": "g",
+    "target": "en"
+  },
+  {
+    "source": "k",
+    "target": "en"
+  },
+  {
+    "source": "h",
+    "target": "en"
+  },
+  {
+    "source": "s",
+    "target": "en"
+  },
+  {
+    "source": "z",
+    "target": "en"
+  },
+  {
+    "source": "c",
+    "target": "en"
+  },
+  {
+    "source": "r",
+    "target": "en"
+  },
+  {
+    "source": "sh",
+    "target": "en"
+  },
+  {
+    "source": "zh",
+    "target": "en"
+  },
+  {
+    "source": "ch",
+    "target": "en"
+  },
+  {
+    "source": "0",
+    "target": "en"
+  },
+  {
+    "source": "b",
+    "target": "ang"
+  },
+  {
+    "source": "p",
+    "target": "ang"
+  },
+  {
+    "source": "m",
+    "target": "ang"
+  },
+  {
+    "source": "f",
+    "target": "ang"
+  },
+  {
+    "source": "d",
+    "target": "ang"
+  },
+  {
+    "source": "t",
+    "target": "ang"
+  },
+  {
+    "source": "n",
+    "target": "ang"
+  },
+  {
+    "source": "l",
+    "target": "ang"
+  },
+  {
+    "source": "g",
+    "target": "ang"
+  },
+  {
+    "source": "k",
+    "target": "ang"
+  },
+  {
+    "source": "h",
+    "target": "ang"
+  },
+  {
+    "source": "s",
+    "target": "ang"
+  },
+  {
+    "source": "z",
+    "target": "ang"
+  },
+  {
+    "source": "c",
+    "target": "ang"
+  },
+  {
+    "source": "r",
+    "target": "ang"
+  },
+  {
+    "source": "sh",
+    "target": "ang"
+  },
+  {
+    "source": "zh",
+    "target": "ang"
+  },
+  {
+    "source": "ch",
+    "target": "ang"
+  },
+  {
+    "source": "0",
+    "target": "ang"
+  },
+  {
+    "source": "b",
+    "target": "eng"
+  },
+  {
+    "source": "p",
+    "target": "eng"
+  },
+  {
+    "source": "m",
+    "target": "eng"
+  },
+  {
+    "source": "f",
+    "target": "eng"
+  },
+  {
+    "source": "d",
+    "target": "eng"
+  },
+  {
+    "source": "t",
+    "target": "eng"
+  },
+  {
+    "source": "n",
+    "target": "eng"
+  },
+  {
+    "source": "l",
+    "target": "eng"
+  },
+  {
+    "source": "g",
+    "target": "eng"
+  },
+  {
+    "source": "k",
+    "target": "eng"
+  },
+  {
+    "source": "h",
+    "target": "eng"
+  },
+  {
+    "source": "s",
+    "target": "eng"
+  },
+  {
+    "source": "z",
+    "target": "eng"
+  },
+  {
+    "source": "c",
+    "target": "eng"
+  },
+  {
+    "source": "r",
+    "target": "eng"
+  },
+  {
+    "source": "sh",
+    "target": "eng"
+  },
+  {
+    "source": "zh",
+    "target": "eng"
+  },
+  {
+    "source": "ch",
+    "target": "eng"
+  },
+  {
+    "source": "0",
+    "target": "eng"
+  },
+  {
+    "source": "d",
+    "target": "ong"
+  },
+  {
+    "source": "t",
+    "target": "ong"
+  },
+  {
+    "source": "n",
+    "target": "ong"
+  },
+  {
+    "source": "l",
+    "target": "ong"
+  },
+  {
+    "source": "g",
+    "target": "ong"
+  },
+  {
+    "source": "k",
+    "target": "ong"
+  },
+  {
+    "source": "h",
+    "target": "ong"
+  },
+  {
+    "source": "s",
+    "target": "ong"
+  },
+  {
+    "source": "z",
+    "target": "ong"
+  },
+  {
+    "source": "c",
+    "target": "ong"
+  },
+  {
+    "source": "r",
+    "target": "ong"
+  },
+  {
+    "source": "zh",
+    "target": "ong"
+  },
+  {
+    "source": "ch",
+    "target": "ong"
+  },
+  {
+    "source": "b",
+    "target": "i"
+  },
+  {
+    "source": "p",
+    "target": "i"
+  },
+  {
+    "source": "m",
+    "target": "i"
+  },
+  {
+    "source": "d",
+    "target": "i"
+  },
+  {
+    "source": "t",
+    "target": "i"
+  },
+  {
+    "source": "n",
+    "target": "i"
+  },
+  {
+    "source": "l",
+    "target": "i"
+  },
+  {
+    "source": "x",
+    "target": "i"
+  },
+  {
+    "source": "j",
+    "target": "i"
+  },
+  {
+    "source": "q",
+    "target": "i"
+  },
+  {
+    "source": "y",
+    "target": "i"
+  },
+  {
+    "source": "d",
+    "target": "ia"
+  },
+  {
+    "source": "l",
+    "target": "ia"
+  },
+  {
+    "source": "x",
+    "target": "ia"
+  },
+  {
+    "source": "j",
+    "target": "ia"
+  },
+  {
+    "source": "q",
+    "target": "ia"
+  },
+  {
+    "source": "y",
+    "target": "a"
+  },
+  {
+    "source": "b",
+    "target": "iao"
+  },
+  {
+    "source": "p",
+    "target": "iao"
+  },
+  {
+    "source": "m",
+    "target": "iao"
+  },
+  {
+    "source": "d",
+    "target": "iao"
+  },
+  {
+    "source": "t",
+    "target": "iao"
+  },
+  {
+    "source": "n",
+    "target": "iao"
+  },
+  {
+    "source": "l",
+    "target": "iao"
+  },
+  {
+    "source": "x",
+    "target": "iao"
+  },
+  {
+    "source": "j",
+    "target": "iao"
+  },
+  {
+    "source": "q",
+    "target": "iao"
+  },
+  {
+    "source": "y",
+    "target": "ao"
+  },
+  {
+    "source": "b",
+    "target": "ie"
+  },
+  {
+    "source": "p",
+    "target": "ie"
+  },
+  {
+    "source": "m",
+    "target": "ie"
+  },
+  {
+    "source": "d",
+    "target": "ie"
+  },
+  {
+    "source": "t",
+    "target": "ie"
+  },
+  {
+    "source": "n",
+    "target": "ie"
+  },
+  {
+    "source": "l",
+    "target": "ie"
+  },
+  {
+    "source": "x",
+    "target": "ie"
+  },
+  {
+    "source": "j",
+    "target": "ie"
+  },
+  {
+    "source": "q",
+    "target": "ie"
+  },
+  {
+    "source": "y",
+    "target": "e"
+  },
+  {
+    "source": "m",
+    "target": "iu"
+  },
+  {
+    "source": "d",
+    "target": "iu"
+  },
+  {
+    "source": "n",
+    "target": "iu"
+  },
+  {
+    "source": "l",
+    "target": "iu"
+  },
+  {
+    "source": "x",
+    "target": "iu"
+  },
+  {
+    "source": "j",
+    "target": "iu"
+  },
+  {
+    "source": "q",
+    "target": "iu"
+  },
+  {
+    "source": "y",
+    "target": "ou"
+  },
+  {
+    "source": "b",
+    "target": "ian"
+  },
+  {
+    "source": "p",
+    "target": "ian"
+  },
+  {
+    "source": "m",
+    "target": "ian"
+  },
+  {
+    "source": "d",
+    "target": "ian"
+  },
+  {
+    "source": "t",
+    "target": "ian"
+  },
+  {
+    "source": "n",
+    "target": "ian"
+  },
+  {
+    "source": "l",
+    "target": "ian"
+  },
+  {
+    "source": "x",
+    "target": "ian"
+  },
+  {
+    "source": "j",
+    "target": "ian"
+  },
+  {
+    "source": "q",
+    "target": "ian"
+  },
+  {
+    "source": "y",
+    "target": "an"
+  },
+  {
+    "source": "b",
+    "target": "in"
+  },
+  {
+    "source": "p",
+    "target": "in"
+  },
+  {
+    "source": "m",
+    "target": "in"
+  },
+  {
+    "source": "n",
+    "target": "in"
+  },
+  {
+    "source": "l",
+    "target": "in"
+  },
+  {
+    "source": "x",
+    "target": "in"
+  },
+  {
+    "source": "j",
+    "target": "in"
+  },
+  {
+    "source": "q",
+    "target": "in"
+  },
+  {
+    "source": "y",
+    "target": "in"
+  },
+  {
+    "source": "n",
+    "target": "iang"
+  },
+  {
+    "source": "l",
+    "target": "iang"
+  },
+  {
+    "source": "x",
+    "target": "iang"
+  },
+  {
+    "source": "j",
+    "target": "iang"
+  },
+  {
+    "source": "q",
+    "target": "iang"
+  },
+  {
+    "source": "y",
+    "target": "ang"
+  },
+  {
+    "source": "b",
+    "target": "ing"
+  },
+  {
+    "source": "p",
+    "target": "ing"
+  },
+  {
+    "source": "m",
+    "target": "ing"
+  },
+  {
+    "source": "d",
+    "target": "ing"
+  },
+  {
+    "source": "t",
+    "target": "ing"
+  },
+  {
+    "source": "n",
+    "target": "ing"
+  },
+  {
+    "source": "l",
+    "target": "ing"
+  },
+  {
+    "source": "x",
+    "target": "ing"
+  },
+  {
+    "source": "j",
+    "target": "ing"
+  },
+  {
+    "source": "q",
+    "target": "ing"
+  },
+  {
+    "source": "y",
+    "target": "ing"
+  },
+  {
+    "source": "x",
+    "target": "iong"
+  },
+  {
+    "source": "j",
+    "target": "iong"
+  },
+  {
+    "source": "q",
+    "target": "iong"
+  },
+  {
+    "source": "y",
+    "target": "ong"
+  },
+  {
+    "source": "b",
+    "target": "u"
+  },
+  {
+    "source": "p",
+    "target": "u"
+  },
+  {
+    "source": "m",
+    "target": "u"
+  },
+  {
+    "source": "f",
+    "target": "u"
+  },
+  {
+    "source": "d",
+    "target": "u"
+  },
+  {
+    "source": "t",
+    "target": "u"
+  },
+  {
+    "source": "n",
+    "target": "u"
+  },
+  {
+    "source": "l",
+    "target": "u"
+  },
+  {
+    "source": "g",
+    "target": "u"
+  },
+  {
+    "source": "k",
+    "target": "u"
+  },
+  {
+    "source": "h",
+    "target": "u"
+  },
+  {
+    "source": "s",
+    "target": "u"
+  },
+  {
+    "source": "z",
+    "target": "u"
+  },
+  {
+    "source": "c",
+    "target": "u"
+  },
+  {
+    "source": "r",
+    "target": "u"
+  },
+  {
+    "source": "sh",
+    "target": "u"
+  },
+  {
+    "source": "zh",
+    "target": "u"
+  },
+  {
+    "source": "ch",
+    "target": "u"
+  },
+  {
+    "source": "w",
+    "target": "u"
+  },
+  {
+    "source": "g",
+    "target": "ua"
+  },
+  {
+    "source": "k",
+    "target": "ua"
+  },
+  {
+    "source": "h",
+    "target": "ua"
+  },
+  {
+    "source": "r",
+    "target": "ua"
+  },
+  {
+    "source": "sh",
+    "target": "ua"
+  },
+  {
+    "source": "zh",
+    "target": "ua"
+  },
+  {
+    "source": "ch",
+    "target": "ua"
+  },
+  {
+    "source": "w",
+    "target": "a"
+  },
+  {
+    "source": "d",
+    "target": "uo"
+  },
+  {
+    "source": "t",
+    "target": "uo"
+  },
+  {
+    "source": "n",
+    "target": "uo"
+  },
+  {
+    "source": "l",
+    "target": "uo"
+  },
+  {
+    "source": "g",
+    "target": "uo"
+  },
+  {
+    "source": "k",
+    "target": "uo"
+  },
+  {
+    "source": "h",
+    "target": "uo"
+  },
+  {
+    "source": "s",
+    "target": "uo"
+  },
+  {
+    "source": "z",
+    "target": "uo"
+  },
+  {
+    "source": "c",
+    "target": "uo"
+  },
+  {
+    "source": "r",
+    "target": "uo"
+  },
+  {
+    "source": "sh",
+    "target": "uo"
+  },
+  {
+    "source": "zh",
+    "target": "uo"
+  },
+  {
+    "source": "ch",
+    "target": "uo"
+  },
+  {
+    "source": "w",
+    "target": "o"
+  },
+  {
+    "source": "g",
+    "target": "uai"
+  },
+  {
+    "source": "k",
+    "target": "uai"
+  },
+  {
+    "source": "h",
+    "target": "uai"
+  },
+  {
+    "source": "sh",
+    "target": "uai"
+  },
+  {
+    "source": "zh",
+    "target": "uai"
+  },
+  {
+    "source": "ch",
+    "target": "uai"
+  },
+  {
+    "source": "w",
+    "target": "ai"
+  },
+  {
+    "source": "d",
+    "target": "ui"
+  },
+  {
+    "source": "t",
+    "target": "ui"
+  },
+  {
+    "source": "g",
+    "target": "ui"
+  },
+  {
+    "source": "k",
+    "target": "ui"
+  },
+  {
+    "source": "h",
+    "target": "ui"
+  },
+  {
+    "source": "s",
+    "target": "ui"
+  },
+  {
+    "source": "z",
+    "target": "ui"
+  },
+  {
+    "source": "c",
+    "target": "ui"
+  },
+  {
+    "source": "r",
+    "target": "ui"
+  },
+  {
+    "source": "sh",
+    "target": "ui"
+  },
+  {
+    "source": "zh",
+    "target": "ui"
+  },
+  {
+    "source": "ch",
+    "target": "ui"
+  },
+  {
+    "source": "w",
+    "target": "ei"
+  },
+  {
+    "source": "d",
+    "target": "uan"
+  },
+  {
+    "source": "t",
+    "target": "uan"
+  },
+  {
+    "source": "n",
+    "target": "uan"
+  },
+  {
+    "source": "l",
+    "target": "uan"
+  },
+  {
+    "source": "g",
+    "target": "uan"
+  },
+  {
+    "source": "k",
+    "target": "uan"
+  },
+  {
+    "source": "h",
+    "target": "uan"
+  },
+  {
+    "source": "s",
+    "target": "uan"
+  },
+  {
+    "source": "z",
+    "target": "uan"
+  },
+  {
+    "source": "c",
+    "target": "uan"
+  },
+  {
+    "source": "r",
+    "target": "uan"
+  },
+  {
+    "source": "sh",
+    "target": "uan"
+  },
+  {
+    "source": "zh",
+    "target": "uan"
+  },
+  {
+    "source": "ch",
+    "target": "uan"
+  },
+  {
+    "source": "w",
+    "target": "an"
+  },
+  {
+    "source": "d",
+    "target": "un"
+  },
+  {
+    "source": "t",
+    "target": "un"
+  },
+  {
+    "source": "n",
+    "target": "un"
+  },
+  {
+    "source": "l",
+    "target": "un"
+  },
+  {
+    "source": "g",
+    "target": "un"
+  },
+  {
+    "source": "k",
+    "target": "un"
+  },
+  {
+    "source": "h",
+    "target": "un"
+  },
+  {
+    "source": "s",
+    "target": "un"
+  },
+  {
+    "source": "z",
+    "target": "un"
+  },
+  {
+    "source": "c",
+    "target": "un"
+  },
+  {
+    "source": "r",
+    "target": "un"
+  },
+  {
+    "source": "sh",
+    "target": "un"
+  },
+  {
+    "source": "zh",
+    "target": "un"
+  },
+  {
+    "source": "ch",
+    "target": "un"
+  },
+  {
+    "source": "g",
+    "target": "uang"
+  },
+  {
+    "source": "k",
+    "target": "uang"
+  },
+  {
+    "source": "h",
+    "target": "uang"
+  },
+  {
+    "source": "sh",
+    "target": "uang"
+  },
+  {
+    "source": "zh",
+    "target": "uang"
+  },
+  {
+    "source": "ch",
+    "target": "uang"
+  },
+  {
+    "source": "w",
+    "target": "ang"
+  },
+  {
+    "source": "w",
+    "target": "en"
+  },
+  {
+    "source": "w",
+    "target": "eng"
+  },
+  {
+    "source": "n",
+    "target": "ü"
+  },
+  {
+    "source": "l",
+    "target": "ü"
+  },
+  {
+    "source": "x",
+    "target": "u"
+  },
+  {
+    "source": "j",
+    "target": "u"
+  },
+  {
+    "source": "q",
+    "target": "u"
+  },
+  {
+    "source": "y",
+    "target": "u"
+  },
+  {
+    "source": "n",
+    "target": "üe"
+  },
+  {
+    "source": "l",
+    "target": "üe"
+  },
+  {
+    "source": "x",
+    "target": "ue"
+  },
+  {
+    "source": "j",
+    "target": "ue"
+  },
+  {
+    "source": "q",
+    "target": "ue"
+  },
+  {
+    "source": "y",
+    "target": "ue"
+  },
+  {
+    "source": "x",
+    "target": "uan"
+  },
+  {
+    "source": "j",
+    "target": "uan"
+  },
+  {
+    "source": "q",
+    "target": "uan"
+  },
+  {
+    "source": "y",
+    "target": "uan"
+  },
+  {
+    "source": "x",
+    "target": "un"
+  },
+  {
+    "source": "j",
+    "target": "un"
+  },
+  {
+    "source": "q",
+    "target": "un"
+  },
+  {
+    "source": "y",
+    "target": "un"
+  }
 ]
 }
