@@ -17,17 +17,8 @@ var legend_x = 0,
 
 var color = d3.scale.category20();
 
-/**
-  * Helper Functions
-  */
-
-function addTooltip(circle) {
-    // code
-}
-
-/**
-  * Main
-  */
+// Main
+//-----------------------------------------------------
 
 function arcDiagram(graph) {
   var radius = d3.scale.sqrt()
@@ -54,73 +45,72 @@ function arcDiagram(graph) {
   drawLinks(graph.links);
   drawNodes(graph.nodes);
 
-  /* 
-   * Legend
-   */
+  // Draw legend
+  //-----------------------------------------------------
 
-  var legend = svg.append("g")
-      .attr("class", "legend");
-  var key = legend.append("g")
+  // var legend = svg.append("g")
+  //     .attr("class", "legend");
+  // var key = legend.append("g")
 
-  // Initial
-  key.append("circle")
-      .attr("id", "legend_initial")
-      .attr("cx", legend_x + key_x)
-      .attr("cy", legend_y + key_y + 5)
-      .attr("r", 5)
-      .style("fill", "blue");
+  // // Initial
+  // key.append("circle")
+  //     .attr("id", "legend_initial")
+  //     .attr("cx", legend_x + key_x)
+  //     .attr("cy", legend_y + key_y + 5)
+  //     .attr("r", 5)
+  //     .style("fill", "blue");
 
-    key.append("text")
-      .attr("class", "legendText")
-      .attr("id", "legend_initial_label")
-      .attr("x", legend_x + key_x + 10 )
-      .attr("y", legend_y + 10 + key_y )
-      .text("Initial");
+  //   key.append("text")
+  //     .attr("class", "legendText")
+  //     .attr("id", "legend_initial_label")
+  //     .attr("x", legend_x + key_x + 10 )
+  //     .attr("y", legend_y + 10 + key_y )
+  //     .text("Initial");
 
-    // Selection
-    key.append("circle")
-        .attr("id", "legend_selection")
-        .attr("cx", function () { return legend_x + key_x })
-        .attr("cy", function () { return legend_y + legend_margin + key_y + 5 })
-        .attr("r", 5)
-        .style("fill", "lightblue");
+  //   // Selection
+  //   key.append("circle")
+  //       .attr("id", "legend_selection")
+  //       .attr("cx", function () { return legend_x + key_x })
+  //       .attr("cy", function () { return legend_y + legend_margin + key_y + 5 })
+  //       .attr("r", 5)
+  //       .style("fill", "lightblue");
 
-    key.append("text")
-        .attr("class", "legendText")
-        .attr("id", "legend_selection_label")
-        .attr("x", legend_x + key_x + 10)
-        .attr("y", legend_y + legend_margin + 10 + key_y)
-        .text("Selection");
+  //   key.append("text")
+  //       .attr("class", "legendText")
+  //       .attr("id", "legend_selection_label")
+  //       .attr("x", legend_x + key_x + 10)
+  //       .attr("y", legend_y + legend_margin + 10 + key_y)
+  //       .text("Selection");
 
-    // Final
-    key.append("circle")
-        .attr("id", "legend_final")
-        .attr("cx", legend_x + key_x)
-        .attr("cy", legend_y + 2 * legend_margin + key_y + 5)
-        .attr("r", 5)
-        .style("fill", "orange");
+  //   // Final
+  //   key.append("circle")
+  //       .attr("id", "legend_final")
+  //       .attr("cx", legend_x + key_x)
+  //       .attr("cy", legend_y + 2 * legend_margin + key_y + 5)
+  //       .attr("r", 5)
+  //       .style("fill", "orange");
 
-    key.append("text")
-        .attr("class", "legendText")
-        .attr("id", "legend_final_label")
-        .attr("x", legend_x + key_x + 10)
-        .attr("y", legend_y + 2 * legend_margin + 10 + key_y)
-        .text("Final");
+  //   key.append("text")
+  //       .attr("class", "legendText")
+  //       .attr("id", "legend_final_label")
+  //       .attr("x", legend_x + key_x + 10)
+  //       .attr("y", legend_y + 2 * legend_margin + 10 + key_y)
+  //       .text("Final");
 
-    // Delete
-    key.append("circle")
-        .attr("id", "legend_delete")
-        .attr("cx", legend_x + key_x)
-        .attr("cy", legend_y + 3 * legend_margin + key_y + 5)
-        .attr("r", 5)
-        .style("fill", "gold");
+  //   // Delete
+  //   key.append("circle")
+  //       .attr("id", "legend_delete")
+  //       .attr("cx", legend_x + key_x)
+  //       .attr("cy", legend_y + 3 * legend_margin + key_y + 5)
+  //       .attr("r", 5)
+  //       .style("fill", "gold");
 
-    key.append("text")
-        .attr("class", "legendText")
-        .attr("id", "legend_delete_label")
-        .attr("x", legend_x + key_x + 10)
-        .attr("y", legend_y + 3 * legend_margin + 10 + key_y)
-        .text("Delete");
+  //   key.append("text")
+  //       .attr("class", "legendText")
+  //       .attr("id", "legend_delete_label")
+  //       .attr("x", legend_x + key_x + 10)
+  //       .attr("y", legend_y + 3 * legend_margin + 10 + key_y)
+  //       .text("Delete");
 }
 
 // layout nodes linearly
@@ -155,21 +145,7 @@ function drawNodes(nodes) {
     .on("mouseover", function(d,i) { addTooltip(d3.select(this)); })
     .on("mouseout", function(d,i) { d3.select("#tooltip").remove(); });
 
-  // var nodes = d3.select("#plot").selectAll(".node")
-  //   .data(nodes)
-  // .enter().append("circle")
-  //   .attr("class", "node")
-  //   .attr("id", function(d, i) { return d.name; })
-  //   .attr("cx", function(d, i) { return d.x; })
-  //   .attr("cy", function(d, i) { return d.y; })
-  //   .attr("r", function(d, i) { return radius; })
-  //   .style("stroke", function(d, i) { return color(d.type); })
-  //   // .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
-  //   // .text(function(d) { return d.token; })
-  //   .on("mouseover", function(d,i) { addTooltip(d3.select(this)); })
-  //   .on("mouseout", function(d,i) { d3.select("#tooltip").remove(); });
-
-  gnodes.append("text")
+  // gnodes.append("text")
     // .attr("dx", function(d) { return 20})
     // .attr("cy", ".35em")
     //.text(function(d) { return d.token; });
@@ -205,4 +181,8 @@ function drawLinks(links) {
 
 function drawLegend() {
 // legend function for colors
+}
+
+function addTooltip(circle) {
+// code
 }
