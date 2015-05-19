@@ -1,4 +1,4 @@
-var width   = 3800,
+var width   = 1200,
     height  = 500,
     margin  = 20,
     pad     = margin / 2,
@@ -140,10 +140,15 @@ function drawNodes(nodes) {
     .attr("id", function(d, i) { return d.name; })
     .attr("cx", function(d, i) { return d.x; })
     .attr("cy", function(d, i) { return d.y; })
-    .attr("r", function(d, i) { return radius; })
+    .attr("r", 5)
     .style("stroke", function(d, i) { return color(d.type); })
     .on("mouseover", function(d,i) { addTooltip(d3.select(this)); })
     .on("mouseout", function(d,i) { d3.select("#tooltip").remove(); });
+
+  nodes.append("text")
+    .attr("dx", function(d) { return 20; })
+    .attr("cy", ".35em")
+    .text(function(d) { return d.token; })
 
   // gnodes.append("text")
     // .attr("dx", function(d) { return 20})

@@ -59,70 +59,36 @@ var tooltip = d3.select("body").append("div")
 //-----------------------------------------------------
 
 function ready(error, tang_session1_trial2, tang_session2_trial1, tang_session2_trial2, tang_session5_trial1, tang_session6_trial1, tang_session6_trial2) {
+// function ready(error, data) {
   if (error) {
     loading.text("Sorry, there has been an error. " +
-             "Please refresh and try again.");
+                 "Please refresh and try again.");
     console.log(error);
   }
 
-  groupData = [tang_session1_trial2, tang_session2_trial1, tang_session2_trial2, tang_session5_trial1, tang_session6_trial1, tang_session6_trial2];
+   groupData = [tang_session1_trial2, tang_session2_trial1, tang_session2_trial2, tang_session5_trial1, tang_session6_trial1, tang_session6_trial2];
 
-  groupData.forEach(function(d,i){
+  groupData.forEach(function(d,i) {
+    // Return a nested list of tokens
+    var nodeData = d.nodes;
     var nestedData = d3.nest()
-      .key(function(d) { d.nodes.token; })
-      .entries(groupData);
-
-    console.log(nestedData);
+      .key(function(el) { return el.token })
+      .entries(nodeData);
+    // console.log(nestedData)
   });
 
-  // console.log(groupData)
-
-
-
-  // data.t0 = tang_session1_trial2;
-  // data.t1 = tang_session2_trial1;
-  // data.t2 = tang_session2_trial2;
-  // data.t3 = tang_session5_trial1;
-  // data.t4 = tang_session6_trial1;
-  // data.t5 = tang_session6_trial2;
-
-  // for (var i = 0; i <= 5; i += 1) {
-  //   data["t" + i].nodes.forEach(function(d) {
-		// d.source = isNaN(d.source) ? d.source : i.nodes[d.source];
-		// d.target = isNaN(d.target) ? d.target : i.nodes[d.target];
-  //   });
-  // }
-
-  // tang_session1_trial2.forEach(function(d,i) {
-  //   d.links.forEach(function(e,i) {
-  //     e.source = isNaN(e.source) ? e.source : e.nodes[e.source];
-  //     e.target = isNaN(e.target) ? e.target : e.nodes[e.target];
-  
-  //   linearLayout(tang_session1_trial2.nodes);
-  //   drawLinks(tang_session1_trial2.links);
-  //   drawNodes(tang_session1_trial2.nodes);
-  //   drawLegend();
-  //   loading.remove();
+  // groupData.forEach(function(d,i) {
+  //   // fix data links to map to objects
+  //   d.source = isNaN(d.source) ? d.source : groupData.nodes[d.source];
+  //   d.target = isNaN(d.target) ? d.target : groupData.nodes[d.target];
   // });
 
+  // linearLayout(groupData);
+  // drawLinks(groupData.links);
+  // drawNodes(groupData.nodes);
+  // // drawLegend();
+  // loading.remove();
 
-  // create plot within svg
-  // var plot = svg.append("g")
-  //   .attr("id", "plot")
-  //   .attr("transform", "translate(" + pad + ", " + pad + ")");
-
-  // fix tang_session1_trial2 links to map to objects
-//   tang_session1_trial2.links.forEach(function(d,i) {
-//     d.source = isNaN(d.source) ? d.source : tang_session1_trial2.nodes[d.source];
-//     d.target = isNaN(d.target) ? d.target : tang_session1_trial2.nodes[d.target];
-//     //console.log(d.source)
-//   });
-
-//   linearLayout(tang_session1_trial2.nodes);
-//   drawLinks(tang_session1_trial2.links);
-//   drawNodes(tang_session1_trial2.nodes);
-//   drawLegend();
-//   loading.remove();
 }
 
 // Node linear layout

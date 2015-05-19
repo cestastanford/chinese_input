@@ -2,21 +2,23 @@
 <meta charset="utf-8">
 <script src="http://d3js.org/d3.v3.js"></script>
 <style>
-
+html {
+  background: #333;
+}
 path.link {
   fill: none;
-  stroke: #666;
+  stroke: #6fb07f;
   stroke-width: 1.5px;
 }
 
 circle {
-  fill: #ccc;
+  fill: #666;
   stroke: #fff;
-  stroke-width: 1.5px;
+  stroke-width: .5px;
 }
 
 text {
-  fill: #000;
+  fill: #fff;
   font: 10px sans-serif;
   pointer-events: none;
 }
@@ -39,14 +41,14 @@ links.forEach(function(link) {
     // link.value = +link.value;
 });
 
-var width = 1200,
-    height = 800;
+var width = window.innerWidth,
+    height = window.innerHeight;
 
 var force = d3.layout.force()
     .nodes(d3.values(nodes))
     .links(links)
     .size([width, height])
-    .linkDistance(190)
+    .linkDistance(200)
     .charge(-900)
     .on("tick", tick)
     .start();
@@ -56,18 +58,18 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 // build the arrow.
-svg.append("svg:defs").selectAll("marker")
-    .data(["end"])      // Different link/path types can be defined here
-  .enter().append("svg:marker")    // This section adds in the arrows
-    .attr("id", String)
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 15)
-    .attr("refY", -1.5)
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
-    .attr("orient", "auto")
-  .append("svg:path")
-    .attr("d", "M0,-5L10,0L0,5");
+// svg.append("svg:defs").selectAll("marker")
+//     .data(["end"])      // Different link/path types can be defined here
+//   .enter().append("svg:marker")    // This section adds in the arrows
+//     .attr("id", String)
+//     .attr("viewBox", "0 -5 10 10")
+//     .attr("refX", 15)
+//     .attr("refY", -1.5)
+//     .attr("markerWidth", 6)
+//     .attr("markerHeight", 6)
+//     .attr("orient", "auto")
+//   .append("svg:path")
+//     .attr("d", "M0,-5L10,0L0,5");
 
 // add the links and the arrows
 var path = svg.append("svg:g").selectAll("path")
