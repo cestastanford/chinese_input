@@ -1,0 +1,192 @@
+<html>
+<head>
+  <title>Grid</title>
+  <meta charset="utf-8" />
+<style>
+svg {
+  height: 300px;
+  width: 1260px;
+  margin: 0 auto;
+  display: block;
+}
+footer {
+  margin-top: 8em;
+  color: #555;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  font-size: 10px;
+}
+.authors ul {
+  list-style: none;
+  font-size: 10px;
+  float: right;
+}
+.authors ul li {
+  display: inline;
+}
+.authors ul li:not(:first-child):before {
+  content: " · ";
+  padding: 0 4px;
+}
+
+</style>
+
+<script src="./bower_components/d3/d3.min.js" charset="utf-8"></script>
+<script src="./bower_components/queue-async/queue.min.js"></script>
+<script src="./bower_components/keypress/keypress-2.1.0.min.js"></script>
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
+<link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+<link rel="stylesheet" href="bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css">
+
+</head>
+<body>
+
+<section>
+  <div class="row">
+    <div class="small-12 columns">
+      <h2>Chinese Computing</h2>
+    </div>
+  </div>
+</section>
+
+<div class="row">
+  <div class="small-4 columns">
+    <select name="field-selector" id="field-selector"></select>
+  </div>
+</div>
+
+<div id="viz">
+  <svg></svg>
+</div>
+
+</body>
+  <footer>
+    
+<script>
+  var color = d3.scale.category20();
+
+  d3.json("data/all.json", function(error, data) {
+      makeAGrid(data);
+  });
+  
+  function makeAGrid(data) {
+    var grid = d3.layout.grid();
+    grid.size([1000,240]);
+    var griddedData = grid(data.nodes);
+
+    d3.select("svg")
+      .append("g")
+      .attr("transform", "translate(50,50)")
+      .selectAll("circle").data(griddedData)
+    .enter().append("circle")
+      .attr("cx", function(d) {return d.x})
+      .attr("cy", function(d) {return d.y})
+      .attr("r", 5)
+      .style("fill", function(d, i) { return color(d.type); })
+  }
+  
+  d3.layout.grid = function() {
+  var gridSize = [10,10];
+  var gridColumns;
+  var gridRows;
+  var gridXScale = d3.scale.linear();
+  var gridYScale = d3.scale.linear();
+
+    function processGrid(data) {
+
+      var rows = Math.ceil(Math.sqrt(data.length));
+      var columns = Math.ceil(Math.sqrt(data.length));
+
+      gridXScale.domain([1,columns]).range([0,gridSize[0]]);
+      gridYScale.domain([1,rows]).range([0,gridSize[1]]);
+
+      var x = 0;
+
+        for (var i = 1; i <= rows; i++) { 
+          for (var j = 1; j <= columns; j++) {
+            if (data[x]) {
+              data[x].x = gridXScale(j);
+              data[x].y = gridYScale(i);
+              x++;
+            }
+            else {
+              break;
+            }
+          }
+        }
+      
+      return data;
+    }
+    
+    processGrid.size = function(newSize) {
+      	if (!arguments.length) return gridSize;
+
+        gridSize = newSize;
+        return this;
+    }
+
+    return processGrid;
+  }
+
+var selectorMenu = {
+  "default": {
+    "field": "default",
+    "label": "Sorted by Trials"
+  },
+  "byGender": {
+    "field": "byGender",
+    "label": "Group by Gender"
+  },
+  "byIME": {
+    "field": "byIME",
+    "label": "Group by IME"
+  },
+  "byDialect": {
+    "field": "byDialect",
+    "label": "Group by Dialect"
+  },
+  "byType": {
+    "field": "byType",
+    "label": "Group by Token Type"
+  }
+};
+
+var fieldSelector = d3.select("#field-selector")
+  .on("change", fieldSelected);
+
+for (var key in selectorMenu) {
+  fieldSelector.append("option")
+  .attr("value", key)
+  .text(selectorMenu[key].label);
+}
+
+d3.select("input").on("change", fieldSelected);
+function fieldSelected() {
+  field = fieldSelector.node().value;
+  if (this.value == "default") {
+    transitionView();
+  } else {
+    transitionView();
+  }
+}
+
+function transitionView() {
+  // code
+}
+</script>
+</script>
+
+<div class="authors">
+  <ul>
+    <li>Tom Mullaney</li>
+    <li>Jason Heppler</li>
+    <li>Rahul Singireddy</li>
+    <li>Stanford University</li>
+  </ul>
+</div>
+  </footer>
+
+</html>
