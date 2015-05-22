@@ -17,6 +17,12 @@ b {
     stroke-width: 1px;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .tooltip {
   color: #222;
   background: #fff;
@@ -29,7 +35,7 @@ b {
   box-shadow: 0px 0px 2px 0px #a6a6a6; 
   opacity: 0.9; 
   position: absolute;
-  width: 325px;
+  width: 225px;
   display: block;
 }
 
@@ -41,11 +47,24 @@ b {
   font-size: 0.80rem;
 }
 
-.hidden {
-  display: none;
-  visibility: hidden;
-  pointer-events: none;
+table {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  width: 100%;
 }
+
+td {
+  text-align: right;
+  padding: 2px 0!important;
+}
+
+tr {
+  margin: 0;
+  background-color: white;
+}
+
 
 .node {
   fill: #fff;

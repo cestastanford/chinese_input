@@ -9,7 +9,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "ia",
@@ -20,7 +22,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "1",
@@ -31,7 +35,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "m",
@@ -42,7 +48,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "a",
@@ -53,7 +61,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "1",
@@ -64,7 +74,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "y",
@@ -75,7 +87,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "in",
@@ -86,7 +100,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "l",
@@ -97,7 +113,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "iao",
@@ -108,7 +126,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "_",
@@ -119,7 +139,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "*",
@@ -130,7 +152,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "j",
@@ -141,7 +165,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "un",
@@ -152,7 +178,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "z",
@@ -163,7 +191,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "1",
@@ -174,7 +204,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "*",
@@ -185,7 +217,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "j",
@@ -196,7 +230,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "iu",
@@ -207,7 +243,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     },
     {
         "token": "1",
@@ -218,7 +256,9 @@
         "gender": "female",
         "operating_system": "mac",
         "input_method": "apple",
-        "trial": "2"
+        "trial": "2",
+        "chinese": "",
+        "english": ""
     }
 ],
 "links":[
