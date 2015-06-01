@@ -47,36 +47,24 @@ function arcDiagram(graph) {
     .attr("id", "plot")
     .attr("transform", "translate(" + padding + ", " + padding + ")");
 
-  // count the paths and alternate the arcs
-  // graph.links.forEach(function(d,i) {
-  //   var pathCount = 0;
-  //   for (var j = 0; j < i; j++) {
-  //     var otherPath = graph.links[j];
-  //     if (otherPath.source === d.source && otherPath.target === d.target) {
-  //       pathCount++;
-  //     }
-  //   }
-  //   // console.log(pathCount)
-  //   d.pathCount = pathCount;
-  // });
+  // count the paths
+  graph.links.forEach(function(d,i) {
+    var pathCount = 0;
+    for (var j = 0; j < i; j++) {
+      var otherPath = graph.links[j];
+      if (otherPath.source === d.source && otherPath.target === d.target) {
+        pathCount++;
+      }
+    }
+    // console.log(pathCount)
+    d.pathCount = pathCount;
+  });
 
   // fix graph links to map to objects
   graph.links.forEach(function(d,i) {
     d.source = isNaN(d.source) ? d.source : graph.nodes[d.source];
     d.target = isNaN(d.target) ? d.target : graph.nodes[d.target];
   });
-
-  // var defs = svg.append("defs")
-  //   .attr("id", "backg")
-  //   .append("rect");
-    // .attr("x", 0)
-    // .attr("y", 200);
-
-  // svg.append("rect")
-  //   .attr("clip-path", "url(backg)")
-  //   .attr("width", width)
-  //   .attr("height", heightHalf)
-  //   .style("fill", "#ffffff");
 
   linearLayout(graph.nodes);
   drawLinks(graph.links);
@@ -153,7 +141,8 @@ function drawLinks(links) {
   .enter().append("path")
     .attr("class", "link")
     // .style("stroke", "red")
-    .style("stroke-width", 2)
+    .style("stroke-width", function(d) { return (2 + d.pathCount); })
+    // .attr("stroke-width", function(d) { return (d.target.interest * 50); })
     .attr("transform", function(d,i) {
       var xshift = d.source.x + (d.target.x - d.source.x) / 2;
       var yshift = yfixed;
