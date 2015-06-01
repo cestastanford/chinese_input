@@ -47,25 +47,18 @@ function arcDiagram(graph) {
     .attr("id", "plot")
     .attr("transform", "translate(" + padding + ", " + padding + ")");
 
-  var clip = d3.select("#chart").append("rect")
-    .attr("id", "clip")
-    .attr("width", width)
-    .attr("height", heightHalf)
-    .attr("fill", "#f2f2f2");
-  svg.append("rect").attr("clip-path", "url(#clip)");
-
   // count the paths and alternate the arcs
-  graph.links.forEach(function(d,i) {
-    var pathCount = 0;
-    for (var j = 0; j < i; j++) {
-      var otherPath = graph.links[j];
-      if (otherPath.source === d.source && otherPath.target === d.target) {
-        pathCount++;
-      }
-    }
-    // console.log(pathCount)
-    d.pathCount = pathCount;
-  });
+  // graph.links.forEach(function(d,i) {
+  //   var pathCount = 0;
+  //   for (var j = 0; j < i; j++) {
+  //     var otherPath = graph.links[j];
+  //     if (otherPath.source === d.source && otherPath.target === d.target) {
+  //       pathCount++;
+  //     }
+  //   }
+  //   // console.log(pathCount)
+  //   d.pathCount = pathCount;
+  // });
 
   // fix graph links to map to objects
   graph.links.forEach(function(d,i) {
@@ -73,17 +66,17 @@ function arcDiagram(graph) {
     d.target = isNaN(d.target) ? d.target : graph.nodes[d.target];
   });
 
-  var defs = svg.append("defs")
-    .attr("id", "backg")
-    .append("rect")
-    .attr("x", 0)
-    .attr("y", 200);
+  // var defs = svg.append("defs")
+  //   .attr("id", "backg")
+  //   .append("rect");
+    // .attr("x", 0)
+    // .attr("y", 200);
 
-  svg.append("rect")
-    .attr("clip-path", "url(backg)")
-    .attr("width", width)
-    .attr("height", heightHalf)
-    .style("fill", "#f2f2f2");
+  // svg.append("rect")
+  //   .attr("clip-path", "url(backg)")
+  //   .attr("width", width)
+  //   .attr("height", heightHalf)
+  //   .style("fill", "#ffffff");
 
   linearLayout(graph.nodes);
   drawLinks(graph.links);
@@ -155,48 +148,48 @@ function drawLinks(links) {
     .tension(0)
     .angle(function(d) { return radians(d); });
 
-  // d3.select("#plot").selectAll(".link")
-  //   .data(links)
-  // .enter().append("path")
-  //   .attr("class", "link")
-  //   .style("stroke", "red")
-  //   .style("stroke-width", 2)
-  //   .attr("transform", function(d,i) {
-  //     var xshift = d.source.x + (d.target.x - d.source.x) / 2;
-  //     var yshift = yfixed;
-  //     return "translate(" + xshift + ", " + yshift + ")";
-  //   })
-  //   .attr("d", function(d,i) {
-  //     var xdist = Math.abs(d.source.x - d.target.x);
-  //     arc.radius(xdist / 2);
-  //     var points = d3.range(0, Math.ceil(xdist / 3));
-  //     radians.domain([0, points.length - 1]);
-  //     return arc(points);
-  //   });
-    // .on("mouseover", edgeOver);
-
-  d3.select("#plot").selectAll(".ellipse-link")
+  d3.select("#plot").selectAll(".link")
     .data(links)
-  .enter().append("ellipse")
-    .attr("fill", "transparent")
-    .attr("stroke", "#888888")
-    .attr("stroke-width", 2)
-    .attr("opacity", 0.5)
-    .attr("cx", function(d) {
-      return (d.target.x - d.source.x) / 2 + radius;
-    })
-    .attr("cy", pad)
-    .attr("rx", function(d) {
-      return Math.abs(d.target.x - d.source.x) / 2;
-    })
-    .attr("ry", function(d) {
-      return 50 + d.pathCount * 5;
-    })
+  .enter().append("path")
+    .attr("class", "link")
+    // .style("stroke", "red")
+    .style("stroke-width", 2)
     .attr("transform", function(d,i) {
-      var xshift = d.source.x - radius;
+      var xshift = d.source.x + (d.target.x - d.source.x) / 2;
       var yshift = yfixed;
       return "translate(" + xshift + ", " + yshift + ")";
     })
+    .attr("d", function(d,i) {
+      var xdist = Math.abs(d.source.x - d.target.x);
+      arc.radius(xdist / 2);
+      var points = d3.range(0, Math.ceil(xdist / 3));
+      radians.domain([0, points.length - 1]);
+      return arc(points);
+    })
+    .on("mouseover", edgeOver);
+
+  // d3.select("#plot").selectAll(".ellipse-link")
+  //   .data(links)
+  // .enter().append("ellipse")
+  //   .attr("fill", "transparent")
+  //   .attr("stroke", "#888888")
+  //   .attr("stroke-width", 2)
+  //   .attr("opacity", 0.5)
+  //   .attr("cx", function(d) {
+  //     return (d.target.x - d.source.x) / 2 + radius;
+  //   })
+  //   .attr("cy", pad)
+  //   .attr("rx", function(d) {
+  //     return Math.abs(d.target.x - d.source.x) / 2;
+  //   })
+  //   .attr("ry", function(d) {
+  //     return 50 + d.pathCount * 5;
+  //   })
+  //   .attr("transform", function(d,i) {
+  //     var xshift = d.source.x - radius;
+  //     var yshift = yfixed;
+  //     return "translate(" + xshift + ", " + yshift + ")";
+  //   });
     // TODO: Update lines on trial click
 }
 
@@ -296,11 +289,11 @@ function tooltipText(d) {
 
 function nodeOver(d,i) {
   // d3.selectAll("circle").style("fill", function (p) {return p == d ? "red" : "#888888"})
-  d3.selectAll("ellipse").style("stroke", function (p) {return p.source == d || p.target == d ? "brown" : "#888888"}).attr("class", "nodeOver")
+  d3.selectAll("path").style("stroke", function (p) {return p.source == d || p.target == d ? "#17becf" : "#888888"})
 }
 
 function edgeOver(d) {
-  d3.selectAll("ellipse").style("stroke", function(p) {return p == d ? "#17becf" : "#888888"})
+  d3.selectAll("path").style("stroke", function(p) {return p == d ? "#17becf" : "#888888"})
   // d3.selectAll("circle").style("fill", function(p) {return p == d.source ? "blue" : p == d.target ? "green" : "#888888"})     
 }
 
@@ -308,7 +301,7 @@ function trialOver(d) {
   var active,
       changedOpacity;
 
-  d3.select("#ellipse-link").style() // function)
+  d3.select("#arcToken"); // function)
 }
 
 function tokenOver(d,i) {
