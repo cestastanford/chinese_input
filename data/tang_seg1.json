@@ -264,283 +264,507 @@
 "links":[
 	{
 		"source": 0,
-		"target": 1
+		"target": 1,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 0,
-		"target": 1
+		"target": 1,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 0,
-		"target": 1
+		"target": 1,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 0,
-		"target": 1
+		"target": 1,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 0,
-		"target": 1
+		"target": 1,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 0,
-		"target": 1
+		"target": 1,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 1,
-		"target": 3
+		"target": 3,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 1,
-		"target": 3
+		"target": 3,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 1,
-		"target": 3
+		"target": 3,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 1,
-		"target": 3
+		"target": 3,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 1,
-		"target": 3
+		"target": 3,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 1,
-		"target": 2
+		"target": 2,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 2,
-		"target": 3
+		"target": 3,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 3,
-		"target": 4
+		"target": 4,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 3,
-		"target": 4
+		"target": 4,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 3,
-		"target": 4
+		"target": 4,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 3,
-		"target": 4
+		"target": 4,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 3,
-		"target": 4
+		"target": 4,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 3,
-		"target": 4
+		"target": 4,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 4,
-		"target": 5
+		"target": 5,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 4,
-		"target": 6
+		"target": 6,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 4,
-		"target": 6
+		"target": 6,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 4,
-		"target": 5
+		"target": 5,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 4,
-		"target": 5
+		"target": 5,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 4,
-		"target": 5
+		"target": 5,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 5,
-		"target": 6
+		"target": 6,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 5,
-		"target": 6
+		"target": 6,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 5,
-		"target": 6
+		"target": 6,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
+	},
+	{
+		"source": 5,
+		"target": 6,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 6,
-		"target": 7
+		"target": 7,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 6,
-		"target": 7
+		"target": 7,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 6,
-		"target": 7
+		"target": 7,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 6,
-		"target": 7
+		"target": 7,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 6,
-		"target": 7
+		"target": 7,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 6,
-		"target": 7
+		"target": 7,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 7,
-		"target": 12
+		"target": 12,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 7,
-		"target": 12
+		"target": 12,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 7,
-		"target": 12
+		"target": 12,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 7,
-		"target": 12
+		"target": 12,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 7,
-		"target": 12
+		"target": 12,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 7,
-		"target": 8
+		"target": 8,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 8,
-		"target": 9
+		"target": 9,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 9,
-		"target": 10
+		"target": 10,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 10,
-		"target": 11
+		"target": 11,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 11,
-		"target": 12
+		"target": 12,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 12,
-		"target": 13
+		"target": 13,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 12,
-		"target": 13
+		"target": 13,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 12,
-		"target": 13
+		"target": 13,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 12,
-		"target": 13
+		"target": 13,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 12,
-		"target": 13
+		"target": 13,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 12,
-		"target": 13
+		"target": 13,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 13,
-		"target": 14
+		"target": 14,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 14,
-		"target": 15
+		"target": 15,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 15,
-		"target": 16
+		"target": 16,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 16,
-		"target": 17
+		"target": 17,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 13,
-		"target": 17
+		"target": 17,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 13,
-		"target": 17
+		"target": 17,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 13,
-		"target": 17
+		"target": 17,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 13,
-		"target": 17
+		"target": 17,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 13,
-		"target": 17
+		"target": 17,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 17,
-		"target": 18
+		"target": 18,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 17,
-		"target": 18
+		"target": 18,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 17,
-		"target": 18
+		"target": 18,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 17,
-		"target": 18
+		"target": 18,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 17,
-		"target": 18
+		"target": 18,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 17,
-		"target": 18
+		"target": 18,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 18,
-		"target": 19
+		"target": 19,
+		"session": 1,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 18,
-		"target": 19
+		"target": 19,
+		"session": 2,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 18,
-		"target": 19
+		"target": 19,
+		"session": 2,
+		"trial": 2,
+		"segment": 1
 	},
 	{
 		"source": 18,
-		"target": 19
+		"target": 19,
+		"session": 5,
+		"trial": 1,
+		"segment": 1
 	},
 	{
 		"source": 18,
-		"target": 19
+		"target": 19,
+		"session": 6,
+		"trial": 1,
+		"segment": 1
+	},
+	{
+		"source": 18,
+		"target": 19,
+		"session": 6,
+		"trial": 2,
+		"segment": 1
 	}
 	]
 }

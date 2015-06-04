@@ -5,11 +5,10 @@ queue()
 });
 
 var width   = 960,
-    height  = 400,
+    height  = 200,
     margin  = 20,
     pad     = margin / 2,
-    padding = 100,
-    heightHalf = height / 4, // for calculationg clippath of the SVG rect
+    padding = 10,
     radius  = 6,
     yfixed  = pad + radius;
 
@@ -56,14 +55,19 @@ function arcDiagram(graph) {
         pathCount++;
       }
     }
-    // console.log(pathCount)
     d.pathCount = pathCount;
   });
+
+  // // Create the unique identifiers for the links
+  // graph.links.forEach(function(d,i) {
+
+  // });
 
   // fix graph links to map to objects
   graph.links.forEach(function(d,i) {
     d.source = isNaN(d.source) ? d.source : graph.nodes[d.source];
     d.target = isNaN(d.target) ? d.target : graph.nodes[d.target];
+    d.sessions = ("Session" + d.session + "Trial" + d.trial + "Seg" + d.segment)
   });
 
   linearLayout(graph.nodes);
@@ -113,18 +117,17 @@ function drawNodes(nodes) {
         .attr("class", "tooltip")
         .attr("style", "left:" + (mouse[0] + 20) + "px; top:" + (mouse[1] - 50) + "px")
         .html(tooltipText(d)); 
-    })
-    .on("mouseover", nodeOver);
+    });
+    // .on("mouseover", nodeOver);
 
   nodeEnter.append("text")
-    // .attr("cy", ".35em")
     .style("text-anchor", "middle")
     .attr("dx", function(d) { return d.x; })
     .attr("dy", function(d) { return d.y + 5; })
     .text(function(d) { return d.token; });
 
-  d3.select("#trial2")
-    .on("mouseover", trialOver);
+  // d3.select("#trial2")
+  //   .on("mouseover", trialOver);
 }
 
 function drawLinks(links) {
@@ -140,9 +143,8 @@ function drawLinks(links) {
     .data(links)
   .enter().append("path")
     .attr("class", "link")
-    // .style("stroke", "red")
+    .attr("id", function(d) { return d.sessions})
     .style("stroke-width", function(d) { return (2 + d.pathCount); })
-    // .attr("stroke-width", function(d) { return (d.target.interest * 50); })
     .attr("transform", function(d,i) {
       var xshift = d.source.x + (d.target.x - d.source.x) / 2;
       var yshift = yfixed;
@@ -155,31 +157,8 @@ function drawLinks(links) {
       radians.domain([0, points.length - 1]);
       return arc(points);
     })
-    .on("mouseover", edgeOver);
-
-  // d3.select("#plot").selectAll(".ellipse-link")
-  //   .data(links)
-  // .enter().append("ellipse")
-  //   .attr("fill", "transparent")
-  //   .attr("stroke", "#888888")
-  //   .attr("stroke-width", 2)
-  //   .attr("opacity", 0.5)
-  //   .attr("cx", function(d) {
-  //     return (d.target.x - d.source.x) / 2 + radius;
-  //   })
-  //   .attr("cy", pad)
-  //   .attr("rx", function(d) {
-  //     return Math.abs(d.target.x - d.source.x) / 2;
-  //   })
-  //   .attr("ry", function(d) {
-  //     return 50 + d.pathCount * 5;
-  //   })
-  //   .attr("transform", function(d,i) {
-  //     var xshift = d.source.x - radius;
-  //     var yshift = yfixed;
-  //     return "translate(" + xshift + ", " + yshift + ")";
-  //   });
-    // TODO: Update lines on trial click
+    // .call(transition);
+    // .on("mouseover", edgeOver);
 }
 
 // Draw legend
@@ -276,23 +255,43 @@ function tooltipText(d) {
    "</table>";
 }
 
+d3.selectAll(".filter_button").on("change", function() {
+  var type = this.value,
+      display = this.checked ? "#888888" : "red";
+
+  d3.selectAll(".link")
+    .filter(function(d) { return "#" + d.session === type; })
+    .style("stroke", display);
+});
+
 function nodeOver(d,i) {
-  // d3.selectAll("circle").style("fill", function (p) {return p == d ? "red" : "#888888"})
   d3.selectAll("path").style("stroke", function (p) {return p.source == d || p.target == d ? "#17becf" : "#888888"})
 }
 
 function edgeOver(d) {
   d3.selectAll("path").style("stroke", function(p) {return p == d ? "#17becf" : "#888888"})
-  // d3.selectAll("circle").style("fill", function(p) {return p == d.source ? "blue" : p == d.target ? "green" : "#888888"})     
 }
 
-function trialOver(d) {
-  var active,
-      changedOpacity;
+// function trialOver(d) {
+//   var active,
+//       changedOpacity;
 
-  d3.select("#arcToken"); // function)
+//   d3.select("#arcToken"); // function)
+// }
+
+function transition(path) {
+  path.transition()
+    .duration(2500)
+    .attrTween("stroke-dasharray", tweenDash)
+    .each("end", function() { d3.select(this).call(transition); });
 }
 
-function tokenOver(d,i) {
-  d3.selectAll(this).style("stroke", function(d) { return p.token == d ? "#17becf" : "#888888"})
+function tweenDash() {
+  var l = this.getTotalLength(),
+      i = d3.interpolateString("0," + l, l + "," + l);
+    return function(t) { return i(t); };
 }
+
+// function tokenOver(d,i) {
+//   d3.selectAll(this).style("stroke", function(d) { return p.token == d ? "#17becf" : "#888888"})
+// }

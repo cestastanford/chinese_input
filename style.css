@@ -10,8 +10,23 @@ b {
     font-weight: 900;
 }
 
-#chart {
+#main {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/*#chart {
   position: relative;
+}*/
+
+.segment {
+	border: 1px dashed #ccc;
+	padding: 2px;
+	margin: 2px;
+}
+
+.segment:hover {
+	border: 1px solid #333
 }
 
 .outline {
