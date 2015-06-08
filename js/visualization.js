@@ -117,8 +117,8 @@ function drawNodes(nodes) {
         .attr("class", "tooltip")
         .attr("style", "left:" + (mouse[0] + 20) + "px; top:" + (mouse[1] - 50) + "px")
         .html(tooltipText(d)); 
-    });
-    // .on("mouseover", nodeOver);
+    })
+    .on("mouseover", nodeOver);
 
   nodeEnter.append("text")
     .style("text-anchor", "middle")
@@ -255,14 +255,18 @@ function tooltipText(d) {
    "</table>";
 }
 
-d3.selectAll(".filter_button").on("change", function() {
-  var type = this.value,
-      display = this.checked ? "#888888" : "red";
+function segmentHighlight(streamHighlight) {
+  // console.log("checked")
+  if(d3.selectAll("path").filter(streamHighlight).style("stroke") == "red"){
+    d3.selectAll("path").filter(streamHighlight).style("stroke", "#888888")
+  } else {
+    d3.selectAll("path").filter(streamHighlight).style("stroke", "red")
+  }
+}
 
-  d3.selectAll(".link")
-    .filter(function(d) { return "#" + d.session === type; })
-    .style("stroke", display);
-});
+// function resetHighlight() {
+//   d3.selectAll("path").style("display","block");
+// }
 
 function nodeOver(d,i) {
   d3.selectAll("path").style("stroke", function (p) {return p.source == d || p.target == d ? "#17becf" : "#888888"})
@@ -271,13 +275,6 @@ function nodeOver(d,i) {
 function edgeOver(d) {
   d3.selectAll("path").style("stroke", function(p) {return p == d ? "#17becf" : "#888888"})
 }
-
-// function trialOver(d) {
-//   var active,
-//       changedOpacity;
-
-//   d3.select("#arcToken"); // function)
-// }
 
 function transition(path) {
   path.transition()
@@ -292,6 +289,21 @@ function tweenDash() {
     return function(t) { return i(t); };
 }
 
-// function tokenOver(d,i) {
-//   d3.selectAll(this).style("stroke", function(d) { return p.token == d ? "#17becf" : "#888888"})
+// Checkbox functions
+
+// d3.select("#unselect-all").on("click", unselectAll());
+// d3.select("#select-all").on("click", selectAll());
+
+// function unselectAll() {
+//   console.log("unselected")
+//   d3.selectAll("#select-all").attr("disabled", null);
+//   d3.selectAll("#unselect-all").attr("disabled", "disabled");
+//   d3.selectAll("input").property('checked', false);
+// }
+
+// function selectAll() {
+//   console.log("selected")
+//   d3.selectAll("#select-all").attr("disabled", "disabled");
+//   d3.selectAll("#unselect-all").attr("disabled", null);
+//   d3.selectAll("input").property('checked', true);
 // }
