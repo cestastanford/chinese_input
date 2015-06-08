@@ -20,19 +20,22 @@
 
 <div id="main">
 
-  <h2>Chinese Input DEV VERSION</h2>
+  <h2>Chinese Input IN DEVELOPMENT</h2>
 
   <div id="chart"></div>
 
   <h4>Trials</h4>
   <!-- TODO: Adapt this so it's programmatically generated -->
 <div class="filter_options">
-<input class="filter_button" id="Session1Trial2Seg1" type="checkbox">Session 1 Trial 2: <span class="segment">xiama1yinjunjiu1</span></input><br>
-<input class="filter_button" id="Session2Trial1Seg1" type="checkbox">Session 2 Trial 1: <span class="segment">xiamayinjunjiu1</span></input><br>
-<input class="filter_button" id="Session2Trial2Seg1" type="checkbox">Session 2 Trial 2: <span class="segment">xiamayinjunjiu2</span></input><br>
-<input class="filter_button" id="Session5Trial1Seg1" type="checkbox">Session 5 Trial 1: <span class="segment">xiama_yinjunjiu_</span></input><br>
-<input class="filter_button" id="Session6Trial1Seg1" type="checkbox">Session 6 Trial 1: <span class="segment">xiama_yinjunjiu_</span></input><br>
-<input class="filter_button" id="Session6Trial2Seg1" type="checkbox">Session 6 Trial 2: <span class="segment">xia1ma1yinliao_*junz1*jiu1</span></input><br>
+  <p>Session 1 Trial 2: <input id="session1trial2seg1" type="checkbox" onclick="segmentHighlight('#Session1Trial2Seg1')" unchecked> <span class="segment">xiama1yinjunjiu1</span></input></p>
+  <p>Session 2 Trial 1: <input id="session2trial1seg1" type="checkbox" onclick="segmentHighlight('#Session2Trial1Seg1')" unchecked> <span class="segment">xiamayinjunjiu1</span></input></p>
+  <p>Session 2 Trial 2: <input id="session2trial2seg1" type="checkbox" onclick="segmentHighlight('#Session2Trial2Seg1')" unchecked> <span class="segment">xiamayinjunjiu2</span></input></p>
+  <p>Session 5 Trial 1: <input id="session5trial1seg1" type="checkbox" onclick="segmentHighlight('#Session5Trial1Seg1')" unchecked> <span class="segment">xiama_yinjunjiu_</span></input></p>
+  <p>Session 6 Trial 1: <input id="session6trial1seg1" type="checkbox" onclick="segmentHighlight('#Session6Trial1Seg1')" unchecked> <span class="segment">xiama_yinjunjiu_</span></input></p>
+  <p>Session 6 Trial 2: <input id="session6trial2seg1" type="checkbox" onclick="segmentHighlight('#Session6Trial2Seg1')" unchecked> <span class="segment">xia1ma1yinliao_*junz1*jiu1</span></input></p>
+
+  <!-- <button id="unselect-all" onmouseover="this.style.cursor='pointer'">Unselect All Segments</button><button id="select-all" disabled="disabled" onmouseover="this.style.cursor='pointer'">Select All Segments</button> -->
+
 </div>
 
 </div>

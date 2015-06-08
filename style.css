@@ -199,3 +199,14 @@ rect {
   font: 10px sans-serif;
   text-anchor: middle;
 }
+
+button[disabled=disabled] {
+  display: none;
+}
+button[disabled=disabled] {
+  color: #555 !important;
+  opacity: 0.4;
+}
+.settings button[disabled=disabled] {
+  display: none;
+}
