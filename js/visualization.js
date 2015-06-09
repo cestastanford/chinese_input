@@ -1,9 +1,4 @@
-queue()
-  .defer(d3.json, "data/tang_seg1.json")
-  .await(function(error, graph) {
-    arcDiagram(graph);
-});
-
+// Globals
 var width   = 960,
     height  = 200,
     margin  = 20,
@@ -31,10 +26,16 @@ var tooltip = d3.select("body").append("div")
 
 // Main
 //-----------------------------------------------------
+queue()
+  .defer(d3.json, "data/tang_seg1.json")
+  .await(function(error, graph) {
+    arcDiagram(graph);
+});
+
 function arcDiagram(graph) {
-  var radius = d3.scale.sqrt()
-    .domain([0, 20])
-    .range([0, 15]);
+  // var radius = d3.scale.sqrt()
+  //   .domain([0, 20])
+  //   .range([0, 15]);
 
   var svg = d3.select("#chart").append("svg")
       .attr("id", "arc")
@@ -58,11 +59,6 @@ function arcDiagram(graph) {
     d.pathCount = pathCount;
   });
 
-  // // Create the unique identifiers for the links
-  // graph.links.forEach(function(d,i) {
-
-  // });
-
   // fix graph links to map to objects
   graph.links.forEach(function(d,i) {
     d.source = isNaN(d.source) ? d.source : graph.nodes[d.source];
@@ -73,6 +69,7 @@ function arcDiagram(graph) {
   linearLayout(graph.nodes);
   drawLinks(graph.links);
   drawNodes(graph.nodes);
+  createFilters(graph);
 }
 
 // layout nodes linearly
@@ -92,7 +89,6 @@ function linearLayout(nodes) {
 }
 
 function drawNodes(nodes) {
-
   var gnodes = d3.select("#plot").selectAll("g.node")
     .data(nodes);
 
@@ -102,7 +98,7 @@ function drawNodes(nodes) {
 
   nodeEnter.append("circle")
     .attr("class", "node")
-    .attr("id", function(d, i) { return d.name; })
+    .attr("id", function(d, i) { return d.token; })
     .attr("cx", function(d, i) { return d.x; })
     .attr("cy", function(d, i) { return d.y; })
     .attr("r", 14)
@@ -114,7 +110,7 @@ function drawNodes(nodes) {
       var mouse = d3.mouse(d3.select("body").node());
       tooltip
         .classed("hidden", false)
-        .attr("class", "tooltip")
+        // .attr("class", "tooltip")
         .attr("style", "left:" + (mouse[0] + 20) + "px; top:" + (mouse[1] - 50) + "px")
         .html(tooltipText(d)); 
     });
@@ -124,10 +120,7 @@ function drawNodes(nodes) {
     .style("text-anchor", "middle")
     .attr("dx", function(d) { return d.x; })
     .attr("dy", function(d) { return d.y + 5; })
-    .text(function(d) { return d.token; });
-
-  // d3.select("#trial2")
-  //   .on("mouseover", trialOver);
+    .text(function(p) { return p.token; });
 }
 
 function drawLinks(links) {
@@ -230,6 +223,81 @@ function drawLegend(d) {
         .text("Delete");
 }
 
+// Filtering
+//-----------------------------------------------------
+
+function createFilters(data) {
+
+  var filterData = d3.select("#sidebarFilter")
+    .data(data);
+  // // console.log(data);
+
+  // start here
+
+  // // dimensions: age group, dialect, gender, operating system, input method
+  // var ageGroup;
+  // var dialect;
+  // var gender;
+  // var operatingSystem;
+  // var inputMethod;
+
+}
+
+// Visual effects
+//-----------------------------------------------------
+function segmentHighlight(streamHighlight) {
+  if(d3.selectAll("path").filter(streamHighlight).classed("highlighted") == true){
+    // d3.selectAll("path").filter(this != streamHighlight).classed("suppressed", false)
+    d3.selectAll("path").filter(streamHighlight).classed("highlighted", false).moveToBack();
+  } else {
+    // d3.selectAll("path").filter(this != streamHighlight).classed("suppressed", true)
+    d3.selectAll("path").filter(streamHighlight).classed("highlighted", true).moveToFront();
+  }
+}
+
+function nodeOver(d,i) {
+  d3.selectAll("path").style("stroke", function (p) {return p.source == d || p.target == d ? "#17becf" : "#888888"})
+}
+
+function edgeOver(d) {
+  d3.selectAll("path").style("stroke", function(p) {return p == d ? "#17becf" : "#888888"})
+}
+
+function transition(path) {
+  path.transition()
+    .duration(2500)
+    .attrTween("stroke-dasharray", tweenDash)
+    .each("end", function() { d3.select(this).call(transition); });
+}
+
+function tweenDash() {
+  var l = this.getTotalLength(),
+      i = d3.interpolateString("0," + l, l + "," + l);
+    return function(t) { return i(t); };
+}
+
+// DOM manipulation on selections
+//-----------------------------------------------------
+
+// We need a way for the arc paths to be drawn on top of one another so we can clearly highlight which
+// session/trial/segment we have selected.
+// TODO: Fix the problem of drawing on top of circles.
+d3.selection.prototype.moveToFront = function() {
+  return this.each(function(){
+    this.parentNode.appendChild(this);
+  });
+};
+d3.selection.prototype.moveToBack = function() { 
+    return this.each(function() { 
+        var firstChild = this.parentNode.firstChild; 
+        if (firstChild) { 
+            this.parentNode.insertBefore(this, firstChild); 
+        } 
+    }); 
+};
+
+// Tooltip
+//-----------------------------------------------------
 function tooltipText(d) {
  return "<h5>Information for " + d.token + "</h5>" +
    "<table>" +
@@ -255,57 +323,3 @@ function tooltipText(d) {
    "</tr>" +
    "</table>";
 }
-
-function segmentHighlight(streamHighlight) {
-  if(d3.selectAll("path").filter(streamHighlight).classed("highlighted") == true){
-    // d3.selectAll("path").filter(this !== streamHighlight).classed("suppressed", false)
-    d3.selectAll("path").filter(streamHighlight).classed("highlighted", false)
-  } else {
-    // d3.selectAll("path").filter(this !== streamHighlight).classed("suppressed", true)
-    d3.selectAll("path").filter(streamHighlight).classed("highlighted", true)
-  }
-}
-
-// function resetHighlight() {
-//   d3.selectAll("path").style("display","block");
-// }
-
-function nodeOver(d,i) {
-  d3.selectAll("path").style("stroke", function (p) {return p.source == d || p.target == d ? "#17becf" : "#888888"})
-}
-
-function edgeOver(d) {
-  d3.selectAll("path").style("stroke", function(p) {return p == d ? "#17becf" : "#888888"})
-}
-
-function transition(path) {
-  path.transition()
-    .duration(2500)
-    .attrTween("stroke-dasharray", tweenDash)
-    .each("end", function() { d3.select(this).call(transition); });
-}
-
-function tweenDash() {
-  var l = this.getTotalLength(),
-      i = d3.interpolateString("0," + l, l + "," + l);
-    return function(t) { return i(t); };
-}
-
-// Checkbox functions
-
-// d3.select("#unselect-all").on("click", unselectAll());
-// d3.select("#select-all").on("click", selectAll());
-
-// function unselectAll() {
-//   console.log("unselected")
-//   d3.selectAll("#select-all").attr("disabled", null);
-//   d3.selectAll("#unselect-all").attr("disabled", "disabled");
-//   d3.selectAll("input").property('checked', false);
-// }
-
-// function selectAll() {
-//   console.log("selected")
-//   d3.selectAll("#select-all").attr("disabled", "disabled");
-//   d3.selectAll("#unselect-all").attr("disabled", null);
-//   d3.selectAll("input").property('checked', true);
-// }

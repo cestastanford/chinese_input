@@ -220,3 +220,18 @@ button[disabled=disabled] {
 .settings button[disabled=disabled] {
   display: none;
 }
+.checkbox-interaction-group {
+    margin-left: 10px;
+    margin-top: 5px;
+    clear: both;
+}
+.checkbox-container {
+    display: block;
+    min-height: 22px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.checkbox-container label {
+    display:inline;
+    margin-bottom: 0px;
+}
