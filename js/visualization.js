@@ -117,8 +117,8 @@ function drawNodes(nodes) {
         .attr("class", "tooltip")
         .attr("style", "left:" + (mouse[0] + 20) + "px; top:" + (mouse[1] - 50) + "px")
         .html(tooltipText(d)); 
-    })
-    .on("mouseover", nodeOver);
+    });
+    // .on("mouseover", nodeOver);
 
   nodeEnter.append("text")
     .style("text-anchor", "middle")
@@ -143,6 +143,7 @@ function drawLinks(links) {
     .data(links)
   .enter().append("path")
     .attr("class", "link")
+    .classed("highlighted", false)
     .attr("id", function(d) { return d.sessions})
     .style("stroke-width", function(d) { return (2 + d.pathCount); })
     .attr("transform", function(d,i) {
@@ -256,11 +257,12 @@ function tooltipText(d) {
 }
 
 function segmentHighlight(streamHighlight) {
-  // console.log("checked")
-  if(d3.selectAll("path").filter(streamHighlight).style("stroke") == "red"){
-    d3.selectAll("path").filter(streamHighlight).style("stroke", "#888888")
+  if(d3.selectAll("path").filter(streamHighlight).classed("highlighted") == true){
+    // d3.selectAll("path").filter(this !== streamHighlight).classed("suppressed", false)
+    d3.selectAll("path").filter(streamHighlight).classed("highlighted", false)
   } else {
-    d3.selectAll("path").filter(streamHighlight).style("stroke", "red")
+    // d3.selectAll("path").filter(this !== streamHighlight).classed("suppressed", true)
+    d3.selectAll("path").filter(streamHighlight).classed("highlighted", true)
   }
 }
 
