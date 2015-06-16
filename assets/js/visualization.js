@@ -27,7 +27,7 @@ var tooltip = d3.select("body").append("div")
 // Main
 //-----------------------------------------------------
 queue()
-  .defer(d3.json, "data/tang_seg1.json")
+  .defer(d3.json, "/assets/data/tang_seg1.json")
   .await(function(error, graph) {
     arcDiagram(graph);
 });
@@ -69,7 +69,7 @@ function arcDiagram(graph) {
   linearLayout(graph.nodes);
   drawLinks(graph.links);
   drawNodes(graph.nodes);
-  createFilters(graph);
+  // createFilters(graph);
 }
 
 // layout nodes linearly
@@ -110,17 +110,26 @@ function drawNodes(nodes) {
       var mouse = d3.mouse(d3.select("body").node());
       tooltip
         .classed("hidden", false)
-        // .attr("class", "tooltip")
         .attr("style", "left:" + (mouse[0] + 20) + "px; top:" + (mouse[1] - 50) + "px")
         .html(tooltipText(d)); 
     });
-    // .on("mouseover", nodeOver);
 
   nodeEnter.append("text")
     .style("text-anchor", "middle")
     .attr("dx", function(d) { return d.x; })
     .attr("dy", function(d) { return d.y + 5; })
     .text(function(p) { return p.token; });
+
+  // Filter by gender
+  // d3.selectAll("#genderInput").on("change", function() {
+  //   var selected = this.value;
+  //       display = this.checked ? "inline" : "none";
+  //   console.log(selected);
+
+  //   d3.selectAll(".link")
+  //     .filter(function(d) { return d.gender === selected; })
+  //     .style("display", display);
+  // });
 }
 
 function drawLinks(links) {
@@ -151,8 +160,7 @@ function drawLinks(links) {
       radians.domain([0, points.length - 1]);
       return arc(points);
     })
-    // .call(transition);
-    // .on("mouseover", edgeOver);
+
 }
 
 // Draw legend
@@ -256,12 +264,16 @@ function segmentHighlight(streamHighlight) {
 }
 
 function nodeOver(d,i) {
+  // Highlight nodes on mouseover
   d3.selectAll("path").style("stroke", function (p) {return p.source == d || p.target == d ? "#17becf" : "#888888"})
 }
 
 function edgeOver(d) {
+  // Highlight edges on mouseover
   d3.selectAll("path").style("stroke", function(p) {return p == d ? "#17becf" : "#888888"})
 }
+
+d3.select("#genderInput").on("change", filterGender);
 
 function transition(path) {
   path.transition()
@@ -274,6 +286,21 @@ function tweenDash() {
   var l = this.getTotalLength(),
       i = d3.interpolateString("0," + l, l + "," + l);
     return function(t) { return i(t); };
+}
+
+function filterGender() {
+  originalNodes = graph.nodes();
+  originalLinks = graph.links();
+  femaleNodes = originalNodes.filter(function(d) { return d.gender == "Female"});
+  femaleLinks = originalLinks.filter(function (d) {return femaleNodes.indexOf(d.source) > -1 && femaleNodes.indexOf(d.target) > -1});
+
+  console.log(femaleLinks);
+
+  d3.selectAll("path")
+    .data(femaleLinks)
+    .exit()
+    .style("display","none")
+    .remove();
 }
 
 // DOM manipulation on selections

@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Chinese Input</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+  <script src="/components/d3/d3.min.js" charset="utf-8"></script>
+  <script src="/components/queue-async/queue.min.js"></script>
+  <script src="/components/keypress/keypress-2.1.0.min.js"></script>
+  <script src="/components/jquery/dist/jquery.min.js"></script>
+  <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/assets/js/visualization.js"></script>
+
+</head>
+<body>
+
+<div id="main" class=".col-md-8">
+
+  <h2>Chinese Input &#8212; IN DEVELOPMENT</h2>
+
+  <div id="chart"></div>
+
+  <div id="sidebar">
+    <h3>Filters</h3>
+    <div id="filterContainer" class="filterContainer checkbox-interaction-group"></div>
+  </div>
+
+<div class="row">
+    <div class="col-md-4">
+      <h4>Trials</h4>
+      <!-- TODO: Adapt this so it's programmatically generated -->
+      <div class="filter_options">
+        <p>Session 1 Trial 2: <input id="session1trial2seg1" type="checkbox" onclick="segmentHighlight('#Session1Trial2Seg1')" unchecked> <span class="segment">xiama1yinjunjiu1</span></input></p>
+        <p>Session 2 Trial 1: <input id="session2trial1seg1" type="checkbox" onclick="segmentHighlight('#Session2Trial1Seg1')" unchecked> <span class="segment">xiamayinjunjiu1</span></input></p>
+        <p>Session 2 Trial 2: <input id="session2trial2seg1" type="checkbox" onclick="segmentHighlight('#Session2Trial2Seg1')" unchecked> <span class="segment">xiamayinjunjiu2</span></input></p>
+        <p>Session 5 Trial 1: <input id="session5trial1seg1" type="checkbox" onclick="segmentHighlight('#Session5Trial1Seg1')" unchecked> <span class="segment">xiama_yinjunjiu_</span></input></p>
+        <p>Session 6 Trial 1: <input id="session6trial1seg1" type="checkbox" onclick="segmentHighlight('#Session6Trial1Seg1')" unchecked> <span class="segment">xiama_yinjunjiu_</span></input></p>
+        <p>Session 6 Trial 2: <input id="session6trial2seg1" type="checkbox" onclick="segmentHighlight('#Session6Trial2Seg1')" unchecked> <span class="segment">xia1ma1yinliao_*junz1*jiu1</span></input></p>
+      </div>
+    </div>
+
+  <div class="col-md-4">
+    <h4>Filters</h4>
+    <!-- TODO: Adapt this so it's programmatically generated -->
+    <div class="filter_options">
+      <input id="genderInput" type="checkbox" value="Female" unchecked> Female</input>
+      <input id="genderInput" type="checkbox" value="Male" unchecked> Male</input>
+    </div>
+</div>
+  <!-- <button id="unselect-all" onmouseover="this.style.cursor='pointer'">Unselect All Segments</button><button id="select-all" disabled="disabled" onmouseover="this.style.cursor='pointer'">Select All Segments</button> -->
+
+</div>
+
+</div>
+
+</body>
+</html>
