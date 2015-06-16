@@ -48,12 +48,14 @@ print "What is the input method editor? (sogou pinyin; baidu pinuin; zhuyin)",
 input_method = raw_input().lower()
 print "What is the trial?",
 trial = raw_input().lower()
+print "What is the session?",
+session = raw_input().lower()
 counter = 0
 result="{\n\"nodes\":[\n"
 #,"age_group":"___", "dialect":"___","gender":"___","operating_system":"___","input_method":"___","trial":"1"}
 for c in textWithoutSpaces:
     if c==" ":
-        result=result+str(counter)+",\"age_group\":\"" + age_group +"\",\"dialect\":\"" + dialect +"\",\"gender\":\"" + gender +"\",\"operating_system\":\"" +operating_system +"\",\"input_method\":\"" + input_method +"\",\"trial\":" + trial + "},"
+        result=result+str(counter)+",\"age_group\":\"" + age_group +"\",\"dialect\":\"" + dialect +"\",\"gender\":\"" + gender +"\",\"operating_system\":\"" +operating_system +"\",\"input_method\":\"" + input_method +"\",\"trial\":" + trial +"\",\"session\":" + session + "},"
         counter=counter+1
     else: result=result+c
 result=result+"],\n\"links\":[\n"
