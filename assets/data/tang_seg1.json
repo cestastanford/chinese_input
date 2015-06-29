@@ -3,262 +3,1283 @@
     {
         "token": "x",
         "type": "initial",
-        "uniq": "1",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 1,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "下",
+            "pinyin": "xia",
+            "id": 1
+          }
+        ]
     },
     {
         "token": "ia",
         "type": "final",
-        "uniq": "2",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 2,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "下",
+            "pinyin": "xia",
+            "id": 1
+          }
+        ]
     },
     {
         "token": "1",
         "type": "selection",
-        "uniq": "3",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 3,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "mandarin"
+          }
+        ],
+        "gender": [
+          {
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "下",
+            "pinyin": "xia",
+            "id": 1
+          }
+        ]
     },
     {
         "token": "m",
         "type": "initial",
-        "uniq": "4",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 4,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "馬",
+            "pinyin": "ma",
+            "id": 2
+          }
+        ]
     },
     {
         "token": "a",
         "type": "final",
-        "uniq": "5",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 5,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "馬",
+            "pinyin": "ma",
+            "id": 2
+          }
+        ]
     },
     {
         "token": "1",
         "type": "selection",
-        "uniq": "6",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 6,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "馬",
+            "pinyin": "ma",
+            "id": 2
+          }
+        ]
     },
     {
         "token": "y",
         "type": "initial",
-        "uniq": "7",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 7,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "飲",
+            "pinyin": "yin",
+            "id": 3
+          }
+        ]
     },
     {
         "token": "in",
         "type": "final",
-        "uniq": "8",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 8,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "飲",
+            "pinyin": "yin",
+            "id": 3
+          }
+        ]
     },
     {
         "token": "l",
         "type": "initial",
-        "uniq": "9",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 9,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "mandarin"
+          }
+        ],
+        "gender": [
+          {
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "飲",
+            "pinyin": "yin",
+            "id": 3
+          }
+        ]
     },
     {
         "token": "iao",
         "type": "final",
-        "uniq": "10",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 10,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "mandarin"
+          }
+        ],
+        "gender": [
+          {
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "飲",
+            "pinyin": "yin",
+            "id": 3
+          }
+        ]
     },
     {
         "token": "_",
         "type": "selection",
-        "uniq": "11",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 11,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "mandarin"
+          }
+        ],
+        "gender": [
+          {
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "飲",
+            "pinyin": "yin",
+            "id": 3
+          }
+        ]
     },
     {
         "token": "*",
         "type": "productive-delete",
-        "uniq": "12",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 12,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "mandarin"
+          }
+        ],
+        "gender": [
+          {
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "飲",
+            "pinyin": "yin",
+            "id": 3
+          }
+        ]
     },
     {
         "token": "j",
         "type": "initial",
-        "uniq": "13",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 13,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "君",
+            "pinyin": "jun",
+            "id": 4
+          }
+        ]
     },
     {
         "token": "un",
         "type": "final",
-        "uniq": "14",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 14,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "君",
+            "pinyin": "jun",
+            "id": 4
+          }
+        ]
     },
     {
         "token": "z",
         "type": "initial",
-        "uniq": "15",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 15,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "mandarin"
+          }
+        ],
+        "gender": [
+          {
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "君",
+            "pinyin": "jun",
+            "id": 4
+          }
+        ]
     },
     {
         "token": "1",
         "type": "selection",
-        "uniq": "16",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 16,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "mandarin"
+          }
+        ],
+        "gender": [
+          {
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "君",
+            "pinyin": "jun",
+            "id": 4
+          }
+        ]
     },
     {
         "token": "*",
         "type": "productive-delete",
-        "uniq": "17",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 17,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "mandarin"
+          }
+        ],
+        "gender": [
+          {
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "君",
+            "pinyin": "jun",
+            "id": 4
+          }
+        ]
     },
     {
         "token": "j",
         "type": "initial",
-        "uniq": "18",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 18,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "酒",
+            "pinyin": "jiu",
+            "id": 5
+          }
+        ]
     },
     {
         "token": "iu",
         "type": "final",
-        "uniq": "19",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 19,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "酒",
+            "pinyin": "jiu",
+            "id": 5
+          }
+        ]
     },
     {
         "token": "1",
         "type": "selection",
-        "uniq": "20",
-        "age_group": "18-30",
-        "dialect": "cantonese",
-        "gender": "female",
-        "operating_system": "mac",
-        "input_method": "apple",
-        "trial": "2",
-        "chinese": "",
-        "english": ""
+        "uniq": 20,
+        "segment": 1,
+        "age_group": [
+          {
+            "range": "18-30"
+          }
+        ],
+        "dialect": [
+          {
+            "type": "cantonese",
+            "type": "mandarin",
+            "type": "hubei"
+          }
+        ],
+        "gender": [
+          {
+            "type": "female",
+            "type": "male"
+          }
+        ],
+        "operating_system": [
+          {
+            "type": "mac"
+          }
+        ],
+        "input_method": [
+          {
+            "type": "apple"
+          }
+        ],
+        "session_explicit": [
+          {
+            "run": "session1trial2",
+            "run": "session2trial1",
+            "run": "session2trial2",
+            "run": "session5trial1",
+            "run": "session6trial1",
+            "run": "session6trial2"
+          }
+        ],
+        "sesson_id":[
+          {
+            "session": [
+              {
+                "run": 1,
+                "run": 2,
+                "run": 5,
+                "run": 6
+              }
+            ],
+            "trial": [
+              {
+                "run": 2,
+                "run": 1
+              }
+            ]
+          }
+        ],
+        "leadto": [
+          {
+            "chinese": "酒",
+            "pinyin": "jiu",
+            "id": 5
+          }
+        ]
     }
 ],
 "links":[
