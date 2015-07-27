@@ -140,6 +140,10 @@ body {
     }
 }
 
+.panel-inner {
+  padding: 5px;
+}
+
 .btn-outline {
     color: inherit;
     background-color: transparent;
