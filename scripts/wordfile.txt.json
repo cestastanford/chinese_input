@@ -1,0 +1,57 @@
+{
+"nodes":[
+{"token":"w","type":"initial","uniq":0,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"o","type":"final","uniq":1,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"r","type":"initial","uniq":2,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"d","type":"initial","uniq":3,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"f","type":"initial","uniq":4,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"i","type":"final","uniq":5,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"l","type":"initial","uniq":6,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"e","type":"final","uniq":7,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"t","type":"initial","uniq":8,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"x","type":"initial","uniq":9,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+{"token":"t","type":"initial","uniq":10,"age_group":"18-30","dialect":"mandarin","gender":"male","operating_system":"mac","input_method":"zhuyin","trial":2","session":1},
+],
+"links":[
+{
+"source": 0,
+"target": 1
+},
+{
+"source": 1,
+"target": 2
+},
+{
+"source": 2,
+"target": 3
+},
+{
+"source": 3,
+"target": 4
+},
+{
+"source": 4,
+"target": 5
+},
+{
+"source": 5,
+"target": 6
+},
+{
+"source": 6,
+"target": 7
+},
+{
+"source": 7,
+"target": 8
+},
+{
+"source": 8,
+"target": 9
+},
+{
+"source": 9,
+"target": 10
+}
+]
+}

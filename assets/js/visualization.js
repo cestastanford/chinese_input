@@ -350,3 +350,9 @@ function tooltipText(d) {
    "</tr>" +
    "</table>";
 }
+
+// d3.select("row")
+// 	.on("mousemove", function() {
+// 	    row.highlight();
+// 	})
+
