@@ -1,0 +1,10 @@
+Trial_Name,Trial_ID,Trial_SESSION,Trial_Trial,Trial_Text,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,#REF!,Keylog_CLEAN,IME,IME,OS,AGE,DIALECT,GENDER,CharacterType,TrialDate
+tang_session1_trial2,1,1,2,TangPoem,g,ui,l,ai,1,*,w,o,sh,i,2,*,n,an,sh,an,,ch,ui,1,guilai1*woshi2*nanshanchui1,,Apple,MAC,23,Cantonese,F,Simplified,12/16/2014
+tang_session2_trial1,1,2,1,TangPoem,g,ui,,,,,w,o,,,,,n,an,sh,an,_,ch,ui,_,guiwonanshan_shuichui_,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
+tang_session2_trial2,1,2,2,TangPoem,g,ui,,,,,w,o,,,,,n,an,sh,an,,ch,ui,_,guiwonanshanchui_,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
+tang_session5_trial1,1,5,1,TangPoem,g,ui,,,,,w,o,,,,,n,an,sh,an,,ch,ui,2,guiwonanshanhui2,,Baidu,MAC,25,Hubei,F,Simplified,1/15/2015
+tang_session6_trial1,1,6,1,TangPoem,g,ui,,,,,w,o,,,,,n,an,sh,an,,ch,ui,1,guiwonanshanchui1,,Sougou,MAC,24,Mandarin,M,Simplified,1/15/2015
+tang_session6_trial2,1,6,2,TangPoem,g,ui,,,,,w,o,,,,,n,an,sh,an,,ch,ui,1,guiwonanshanchui1,,Sougou,MAC,24,Mandarin,M,Simplified,1/15/2015
+CodeOfCorrespondingChinese-SeeOtherSheet,,,,,16,16,,,,,17,17,,,,,18,18,19,19,,20,20,,,,,,,,,,
+DNA_Type(PLEASEDOUBLECHECK!),,,,,I,F,I,F,S,D,I,F,I,F,S,D,I,F,I,F,S,I,F,S,,,,,,,,,
+MasterTokenID,,,,,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,,,,,,,,,
