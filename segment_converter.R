@@ -17,7 +17,7 @@ tangtext <- tangtext_csv[1:6,] %>%
 
 tangtext$uniq <- ave( 1:nrow(tangtext), tangtext$Trial_Name, factor( tangtext$token), FUN=function(x) 1:length(x) )
 tangtext$Segment <- paste("1")
-tangtext$text_seg <- paste(tangtext$Trial_Text, tangtext$Segment, sep="_")
+tangtext$text_seg_id <- paste(tangtext$Trial_Text, tangtext$Segment, sep="_")
 colnames(tangtext) <- c("trial_name","trial_id","session","trial","trial_text","keylog","editor1","editor","operating_system","age_group","dialect","gender","character_type","trial_date","token_type","token","uniq","segment","text_seg")
 write.csv(tangtext, "data/tangtextseg1.csv", na="")
 

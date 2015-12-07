@@ -1,10 +1,10 @@
 Trial_Name,Trial_ID,Trial_SESSION,Trial_Trial,Trial_Text,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,Keylog_CLEAN,IME,IME,OS,AGE,DIALECT,GENDER,CharacterType,TrialDate
-tang_session1_trial2,1,1,2,TangPoem,x,ia,1,m,a,1,y,in,l,iao,_,*,j,un,z,1,*,j,iu,1,xia1ma1yinliao_*junz1*jiu1,,Apple,MAC,23,Cantonese,F,Simplified,12/16/2014
-tang_session2_trial1,1,2,1,TangPoem,x,ia,,m,a,_,y,in,,,,,j,un,,,,j,iu,_,xiama_yinjunjiu_,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
-tang_session2_trial2,1,2,2,TangPoem,x,ia,,m,a,_,y,in,,,,,j,un,,,,j,iu,_,xiama_yinjunjiu_,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
-tang_session5_trial1,1,5,1,TangPoem,x,ia,,m,a,,y,in,,,,,j,un,,,,j,iu,2,xiamayinjunjiu2,,Baidu,MAC,25,Hubei,F,Simplified,1/15/2015
+tang_session1_trial2,1,1,2,TangPoem,x,ia,1,m,a,1,y,in,l,iao,1,*,j,un,z,1,*,j,iu,1,xia1ma1yinliao_*junz1*jiu1,,Apple,MAC,23,Cantonese,F,Simplified,12/16/2014
+tang_session2_trial1,1,2,1,TangPoem,x,ia,,m,a,1,y,in,,,,,j,un,,,,j,iu,1,xiama_yinjunjiu_,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
+tang_session2_trial2,1,2,2,TangPoem,x,ia,,m,a,1,y,in,,,,,j,un,,,,j,iu,1,xiama_yinjunjiu_,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
+tang_session5_trial1,1,5,1,TangPoem,x,ia,,m,a,,y,in,,,,,j,un,,,,j,iu,1,xiamayinjunjiu2,,Baidu,MAC,25,Hubei,F,Simplified,1/15/2015
 tang_session6_trial1,1,6,1,TangPoem,x,ia,,m,a,,y,in,,,,,j,un,,,,j,iu,1,xiamayinjunjiu1,,Sougou,MAC,24,Mandarin,M,Simplified,1/15/2015
 tang_session6_trial2,1,6,2,TangPoem,x,ia,,m,a,1,y,in,,,,,j,un,,,,j,iu,1,xiama1yinjunjiu1,,Sougou,MAC,24,Mandarin,M,Simplified,1/15/2015
-CodeOfCorrespondingChinese-SeeOtherSheet,,,,,1,1,,2,2,,3,3,,,,,4,4,,,,5,5,,,,,,,,,,
-DNA_Type,,,,,I,F,S,I,F,S,I,F,I,F,S,D,I,F,I,S,D,I,F,S,,,,,,,,,
+ChineseID,,,,,1,1,1,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,,,,,,,,,
+DNA_Type,,,,,initial,final,selection,initial,final,selection,initial,final,initial,final,selection,delete,initial,final,initial,selection,delete,initial,final,selection,,,,,,,,,
 MasterTokenID,,,,,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,,,,,,,,,

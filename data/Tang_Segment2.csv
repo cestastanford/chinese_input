@@ -1,10 +1,10 @@
-Trial_Name,Trial_ID,Trial_SESSION,Trial_Trial,Trial_Text,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19,x20,x21,x22,Keylog_CLEAN,IME,IME,OS,AGE,DIALECT,GENDER,CharacterType,TrialDate
+Trial_Name,Trial_ID,Trial_SESSION,Trial_Trial,Trial_Text,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,Keylog_CLEAN,IME,IME,OS,AGE,DIALECT,GENDER,CharacterType,TrialDate
 tang_session1_trial2,1,1,2,TangPoem,w,en,1,j,un,z,i,1,*,,h,e,s,uo,1,,,,,zh,i,1,wen1junzi1*hesuo1zhi1,,Apple,MAC,23,Cantonese,F,Simplified,12/16/2014
-tang_session2_trial1,1,2,1,TangPoem,w,en,,j,un,,,,,,h,e,s,uo,,,,,,zh,i,_,wenjunhesuozhi_,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
-tang_session2_trial2,1,2,2,TangPoem,w,en,_,j,un,,,,,_,h,e,s,uo,,,,,,zh,i,2,wen_jun_hesuozhi2,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
-tang_session5_trial1,1,5,1,TangPoem,w,en,,j,un,,,,,,h,e,s,uo,,,,,,zh,i,2,wenjunhesuozhi2,,Baidu,MAC,25,Hubei,F,Simplified,1/15/2015
+tang_session2_trial1,1,2,1,TangPoem,w,en,,j,un,,,,,,h,e,s,uo,,,,,,zh,i,1,wenjunhesuozhi_,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
+tang_session2_trial2,1,2,2,TangPoem,w,en,1,j,un,,,,,1,h,e,s,uo,,,,,,zh,i,1,wen_jun_hesuozhi2,,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
+tang_session5_trial1,1,5,1,TangPoem,w,en,,j,un,,,,,,h,e,s,uo,,,,,,zh,i,1,wenjunhesuozhi2,,Baidu,MAC,25,Hubei,F,Simplified,1/15/2015
 tang_session6_trial1,1,6,1,TangPoem,w,en,,j,un,,,,,,h,e,s,uo,,zh,i,1,*,zh,i,1,wenjunhesuozhi1*zhi1,,Sougou,MAC,24,Mandarin,M,Simplified,1/15/2015
 tang_session6_trial2,1,6,2,TangPoem,w,en,,j,un,,,,,,h,e,s,uo,,zh,i,1,*,zh,i,1,wenjunhesuozhi1*zhi1,,Sougou,MAC,24,Mandarin,M,Simplified,1/15/2015
-CodeOfCorrespondingChinese-SeeOtherSheet,,,,,6,6,,7,7,,,,,,8,8,9,9,,,,,,10,10,,,,,,,,,,
-DNA_Type(PLEASEDOUBLECHECK!),,,,,I,F,S,I,F,I,F,S,D,S,I,F,I,F,S,I,F,S,D,I,F,S,,,,,,,,,
-MasterTokenID,,,,,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,,,,,,,,,
+ChineseID,,,,,6,6,6,7,7,7,7,7,7,7,8,8,9,9,9,9,9,9,9,10,10,10,,,,,,,,,
+DNA_Type,,,,,initial,final,selection,initial,final,initial,final,selection,delete,selection,initial,final,initial,final,selection,initial,final,selection,delete,initial,final,selection,,,,,,,,,
+MasterTokenID,,,,,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,,,,,,,,,
