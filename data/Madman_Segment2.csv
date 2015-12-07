@@ -1,10 +1,10 @@
-Trial_Name,Trial_ID,Trial_SESSION,Trial_Trial,Trial_Text,,,,,,,,,,,,,,,,Keylog_CLEAN,IME,OS,AGE,DIALECT,GENDER,CharacterType,TrialDate
-madman_session2_trial2,2,2,2,Madman,f,an,sh,i,2,x,u,d,e,,y,an,j,iu,2,wanshang_zongshishuibuzhao_fanshi2xudeyanjiu2caihuimingbai_tamen_yeyou_geizhixian_dajia_guode2,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
-madman_session5_trial1,2,5,1,Madman,f,an,sh,i,_,x,u,d,e,,y,an,j,iu,2,"wanshang_zongshi_shuibuzhaojiao_.fanshi_xudeyanjiu2,caihuimingbai_.tamen_yeyougeizhixian2dajiaguode___**jiasuo_*",Baidu,MAC,25,Hubei,F,Simplified,1/15/2015
+Trial_Name,Trial_ID,Trial_SESSION,Trial_Trial,Trial_Text,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,Keylog_CLEAN,IME,OS,AGE,DIALECT,GENDER,CharacterType,TrialDate
+madman_session2_trial2,2,2,2,Madman,f,an,sh,i,1,x,u,d,e,,y,an,j,iu,1,wanshang_zongshishuibuzhao_fanshi2xudeyanjiu2caihuimingbai_tamen_yeyou_geizhixian_dajia_guode2,Apple,MAC,24,Mandarin,F,Simplified,12/18/2014
+madman_session5_trial1,2,5,1,Madman,f,an,sh,i,1,x,u,d,e,,y,an,j,iu,1,"wanshang_zongshi_shuibuzhaojiao_.fanshi_xudeyanjiu2,caihuimingbai_.tamen_yeyougeizhixian2dajiaguode___**jiasuo_*",Baidu,MAC,25,Hubei,F,Simplified,1/15/2015
 madman_session6_trial1,2,6,1,Madman,f,an,sh,i,,x,u,d,ei,1,y,an,j,iu,1,"wanshang1zongshi1shuibuzhao1.fanshixudei1yanjiu1,caihuimingbai1.tamen1,yeyougei1zhixian5dajia1guode1",Sougou,MAC,24,Mandarin,M,Simplified,1/15/2015
 madman_session6_trial2,2,6,2,Madman,f,an,sh,i,,x,u,d,ei,,y,an,j,iu,1,"wanshangzongshi1shuibuzhao1.fanshixudeiyanjiu1,caihuimingbai1.tamen1,yeyoug1zhixiandajiaguo321de1",Sougou,MAC,24,Mandarin,M,Simplified,1/15/2015
-DNA_Type(PLEASEDOUBLECHECK!),,,,,I,F,I,F,S,I,F,I,F,S,I,F,I,F,S,,,,,,,,
-CodeOfCorrespondingChinese-SeeOtherSheet,,,,,8,8,9,9,,10,10,11,11,,12,12,13,13,,,,,,,,,
-MasterTokenID,,,,,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,,,,,,,,
+DNA_Type(PLEASEDOUBLECHECK!),,,,,initial,final,initial,final,selection,initial,final,initial,final,selection,initial,final,initial,final,selection,,,,,,,,
+CodeOfCorrespondingChinese-SeeOtherSheet,,,,,8,8,9,9,9,10,10,11,11,11,12,12,13,13,13,,,,,,,,
+MasterTokenID,,,,,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,,,,,,,,
 SCREEN OUTPUT,"晚上總是睡不著。凡事須得研究，才會明白。 他們,也有給知縣打枷過的，也有給紳士掌過嘴的",,,,,,,,,,,,,,,,,,,,,,,,,,
 TRANSLATION,"“I can't sleep at night. Everything requires careful consideration if one is to understand it.Those people, some of whom have been pilloried by the magistrate…” (“Diary of a Madman” by Lu Xun, 1881-1936)",,,,,,,,,,,,,,,,,,,,,,,,,,
